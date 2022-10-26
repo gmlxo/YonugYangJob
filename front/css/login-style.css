@@ -53,10 +53,6 @@
     transition: .6s;
 }
 
-.login-box-input #find{
-    width: 100px;
-}
-
 .login-label input {
     padding: 16px 145px;
     font-size: 15px;
@@ -64,8 +60,12 @@
     background: none;
     color: #000;
 }
+.login-label input:hover{
+    background-color: #000;
+    color: #fff;
+}
 
 .login-box .login-label label {
-    vertical-align: -30px;
+    vertical-align: -20px;
     color: #000;
 }
