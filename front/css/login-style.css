@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .login-box {
     position: absolute;
     top: 50%;
@@ -64,7 +67,13 @@
     background-color: #000;
     color: #fff;
 }
+.login-label a{
+    color: rgb(103, 101, 101);
+}
 
+.login-label a:hover{
+    color: blue;
+}
 .login-box .login-label label {
     vertical-align: -20px;
     color: #000;
