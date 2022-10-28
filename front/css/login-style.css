@@ -57,12 +57,20 @@
 }
 
 .login-label input {
-    padding: 16px 145px;
-    font-size: 15px;
+    padding: 16px 138px;
+    font-size: 20px;
     border-radius: 6px;
     background: none;
     color: #000;
 }
+.login-label #signUp-but{
+    padding: 16px 125px;
+    font-size: 20px;
+    border-radius: 6px;
+    background: none;
+    color: #000;
+}
+
 .login-label input:hover{
     background-color: #000;
     color: #fff;
