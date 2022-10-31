@@ -1,1 +1,3 @@
-document.querySelector("body > main > div:nth-child(6)")
+$("#ser").click(function (e) { 
+    alert('수민이 지원');    
+});

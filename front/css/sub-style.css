@@ -1,0 +1,16 @@
+p{
+    font-size: 50px;
+}
+.link-dark .link-secondary{
+    color: #000;
+}
+.link-dark:hover{
+    color: #00ff;
+}
+.form-control{
+    width: 450px;
+}
+.d-flex > a{
+    font-size: 20px;
+    color: #000;
+}
