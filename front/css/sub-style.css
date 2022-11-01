@@ -1,29 +1,76 @@
-p{
+/* header and footer css */
+p {
     font-size: 50px;
 }
-.link-dark .link-secondary{
+
+.link-dark .link-secondary {
     color: #000;
 }
-.link-dark:hover{
+
+.link-dark:hover {
     color: #00ff;
 }
-.form-control{
+
+.form-control {
     width: 450px;
 }
-.d-flex > a{
+
+.d-flex>a {
     font-size: 20px;
     color: #000;
 }
-.search-box{
+
+/* pop up _ search css */
+.box {
     margin: 0 auto;
-    width: 1000px;
-    height: 200px;
-    font-size: 15px;
-    text-align: center;
-    border: #000;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
 }
-.search-box input{
+
+.search-box {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+    top: 7px;
+    width: 381.782px;
+    height: 34px;
+    font-size: 15px;
+    /* text-align: center; */
+    border: 1px solid #000;
+}
+
+.search-box:active,
+.search-box:hover {
+    border: 2px solid rgb(51, 51, 217);
+    color: rgb(51, 51, 217);
+}
+
+.search-box input {
     border: none;
-    
-    font-size: 20px;
+    font-size: 17px;
+    height: 33px;
+}
+
+.search-box input[type=search] {
+    width: 300px;
+    outline: none;
+}
+
+.search-box input[type=submit] {
+    border-radius: 0 2px 3px 0;
+    width: 53.94px;
+    height: 34.5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* pop up _ contents css */
+.contents-box {
+    border: 1px solid #000;
+}
+
+.contents-box p {
+    font-size: 10px;
 }
