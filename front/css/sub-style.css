@@ -14,3 +14,16 @@ p{
     font-size: 20px;
     color: #000;
 }
+.search-box{
+    margin: 0 auto;
+    width: 1000px;
+    height: 200px;
+    font-size: 15px;
+    text-align: center;
+    border: #000;
+}
+.search-box input{
+    border: none;
+    
+    font-size: 20px;
+}
