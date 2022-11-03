@@ -2,9 +2,8 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
-<%@ include file="/header.jsp" %>
+ <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/loginStyle.css">
-
 	<div class="login-box">
         <h1>sign up</h1>
         <form action="#" method="post">
@@ -21,7 +20,7 @@
                 <label>Name</label>
             </div>
             <div class="login-box-input">
-                <input type="text" name="date_of_birth" required>
+                <input type="text" name="birth" required>
                 <label>Birth</label>
             </div>
             <div class="login-box-input">
