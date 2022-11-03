@@ -30,7 +30,7 @@
         </footer>
     </div>
 
-    <script src="js/menuScript.js"></script>
-    <script src="js/jquery.js"></script>
+    <script src="/js/menuScript.js"></script>
+    <script src="/js/jquery.js"></script>
 </body>
 </html>

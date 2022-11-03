@@ -1,5 +1,5 @@
 $("#ser").click(function (e) { 
-    alert('수민이 지원');    
+    alert("DB : 수민이 지원");
 });
 
 $(".search-box-popUp").hover(function(){
