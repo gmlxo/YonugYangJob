@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="header.jsp" %>
+<link rel="stylesheet" href="/css/indexStyle.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index-style.css">
-    <!-- <script src="js/jquery-3.1.1.js"></script> -->
-    <title>index</title>
-</head>
-
-<body>
 <div class="box">
     <div class="index-box">
         <div class="enterprise">
@@ -48,8 +40,5 @@
     <div class="index-box"></div>
     <div class="index-box"></div>
 </div>
-    <!-- <script src="js/index-script.js"></script>
-    <script src="js/jquery-3.1.1.js"></script> -->
-</body>
-
-</html>
+    
+<%@ include file="footer.jsp" %>
