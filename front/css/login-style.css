@@ -71,8 +71,10 @@
     color: #000;
 }
 
-.login-label input:hover{
+.login-label input:hover,
+.login-label #signUp-but:hover{
     background-color: #000;
+    border: 2px solid #000;
     color: #fff;
 }
 .login-label a{
