@@ -7,9 +7,13 @@
     margin: 10px;
     width: 338px;
     height: 200px;
-    border: 1px solid red;
+    border: 1px solid rgb(122, 17, 171);
     overflow: hidden;
     position: relative;
+}
+
+.index-box:hover{
+    border: 2.5px solid rgb(122, 17, 171);
 }
 
 .index-box>.enterprise>img {

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.notice {
+    width: 1100px;
+    height: 200px;
+    padding: 20px 20px 0 0;
+    margin: 0 auto;
+}
+
+.tabs {
+    width: 1100px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.tabs>div {
+    float: left;
+    height: 50px;
+    width: 409px;
+    border: 1px solid #000;
+    background-color: #888;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin: auto;
+}
+
+#sea-inp {
+    font-size: 17px;
+    width: 280px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.tabs .region-jobs {
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+.region-box {
+    margin-top: -1px;
+    width: 1098px;
+    height: 500px;
+    border: 1px solid #000;
+    padding-left: 5px;
+}
+
+.do-jobs {
+    float: left;
+    margin-left: -5px;
+    width: 366px;
+    height: 500px;
+    border: 1px solid red;
+
+}
+
+.go-jobs {
+    float: right;
+    width: 730px;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+/* table {
+    /* margin: 0 auto; 
+    margin-top: 10px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+} */
