@@ -1,3 +1,5 @@
+/* 지역 */
+
 $(".region-jobs").click(function(){
     $(this).css({
         "border-bottom" : "0",
