@@ -1,34 +1,26 @@
-$(".tab-news").click(function(){
+$(".tab-id-find").click(function(){
     $(this).css({
         "border-bottom" : "0",
         "background-color" : "white"
     });
-    $(".tab-gallery").css({
+    $(".tab-pw-find").css({
         "border-bottom" : "1px solid #000",
         "background-color" : "#888"
     });
-    $(".gallery").hide();
-    $(".news").show();
+    $(".pw-find-box").hide();
+    $(".id-find-box").show();
 });
 
-$(".tab-gallery").click(function(){
+$(".tab-pw-find").click(function(){
     $(this).css({
         "border-bottom" : "0",
         "background-color" : "white"
     });
-    $(".tab-news").css({
+    $(".tab-id-find").css({
         "border-bottom" : "1px solid #000",
         "background-color" : "#888"
     });
 
-    $(".news").hide();
-    $(".gallery").show();
+    $(".id-find-box").hide();
+    $(".pw-find-box").show();
 });
-
-function openPop() {
-    $("#pop").show("slow");
-}
-
-function closePop() {
-    $("#pop").hide("fast");
-}

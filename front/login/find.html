@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +9,43 @@
     <link rel="stylesheet" href="/css/find-style.css">
     <script src="/js/jquery-3.1.1.js"></script>
 </head>
+
 <body>
 
     <div class="wrapper">
         <div class="contents">
             <div class="notice">
                 <div class="tabs">
-                    <div class="tab-news">아이디 찾기</div>
-                    <div class="tab-gallery">비밀번호 찾기</div>
+                    <div class="tab-id-find">아이디 찾기</div>
+                    <div class="tab-pw-find">비밀번호 찾기</div>
                 </div>
-                <div class="news">
-                    <ul>
-                        <li>
-                            <a href="javascript:openPop();">
-                                공지사항 1의 내용입니다.
-                            </a>
-                        </li>
-                        <li>2020-04-01</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">공지사항 2의 내용입니다.</a>
-                        </li>
-                        <li>2020-04-01</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">공지사항 3의 내용입니다.</a>
-                        </li>
-                        <li>2020-04-01</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">공지사항 4의 내용입니다.</a>
-                        </li>
-                        <li>2020-04-01</li>
-                    </ul>
+                <div class="id-find-box">
+                    <table>
+                        <tr>
+                            <td id="col">이름</td>
+                            <td  id="bor"><input type="text" name="" id="inp"></td>
+                        </tr>
+                        <tr>
+                            <td id="col">이메일</td>
+                            <td id="bor"><input type="email" name="" id="inp"></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="gallery">
-                    <img src="./images/g1.jpeg" alt="" width="100" height="100">
-                    <img src="./images/g2.jpeg" alt="" width="100" height="100">
-                    <img src="./images/g3.jpeg" alt="" width="100" height="100">
+                <div class="pw-find-box">
+                    <table>
+                        <tr>
+                            <td id="col">아이디</td>
+                            <td id="bor"><input type="text" name="" id="inp"></td>
+                        </tr>
+                        <tr>
+                            <td id="col">이메일</td>
+                            <td id="bor"><input type="email" name="" id="inp"></td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-        </div>
 
-        <script src="/js/jquery-3.1.1.js"></script>
-        <script src="/js/find-script.js"></script>
-
-        <br><br>
-    <a href="login.html" id="s">로그인으로 돌아가기</a>
+                <script src="/js/jquery-3.1.1.js"></script>
+                <script src="/js/find-script.js"></script>
 </body>
+
 </html>
