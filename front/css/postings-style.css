@@ -4,7 +4,7 @@ table {
     border-spacing: 0px;
 }
 
-td{
+td {
     width: 100px;
     height: 60px;
     border: 1px solid #888;
@@ -41,7 +41,7 @@ input {
     height: 60px;
 }
 
-#text{
+#text {
     height: 230px;
     width: 610px;
     resize: none;
