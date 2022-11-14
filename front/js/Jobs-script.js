@@ -5,7 +5,16 @@ var region = [".seoul", ".gyeonggi", ".incheon", ".busan", ".daegu", ".gwangju",
 var seoul = [".all_seoul", ".gangnam", ".gangdong", ".ganbuk", ".gangseo", ".gwanak", ".gwangjin", ".guro", ".geumcheon", ".nowon", ".dobong", ".dongdaemun", ".otherthan-seoul"];
 var gyeonggi = [".all_gyeonggi", ".SouthernGyeonggi", ".suwon", ".yongin", ".seongnam", ".bucheon", ".hwaseongCity", ".ansan", ".anyang", ".pyeongtaek", ".siheung", ".gimpoCity", ".gwangju", ".gwangmyeong", ".gunpo", ".hanam", ".osan", ".icheon", ".anseong", ".uiwang", ".yangpyeong", ".yeoju", ".otherthan-seoul"];
 var incheon = [".ganghwa", ".ongjin", ".jung_in", ".dong_in", ".michuholgu", ".yeonsu", ".namdong", ".bupyeong", ".gyeyang", ".western"];
-var busan = [".jung", ".dong"];
+var busan = [".jung_bu", ".dong_bu", ".yeongdo", ".busanjin", ".dongnae", ".nam_bu", ".buk", ".haeundae", ".sahagu", ".geumjeong", ".gangseo", ".yeonje", ".swimmingPool", ".sasanggu", ".gijang"];
+var daegu = [];
+var gwangju = [];
+var daejeon = [];
+var ulsan = [];
+var sejong = [];
+var gangwon = [];
+var gyeongnam = [];
+var gyeongbuk = [];
+var jeonnnam = [];
  
 $(".region-jobs").click(function () {
     $(this).css({

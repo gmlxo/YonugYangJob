@@ -6,102 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/jobs-style.css">
+    <link rel="stylesheet" href="/css/index-style.css">
     <script src="/js/jquery-3.1.1.js"></script>
     <title>jobs</title>
 </head>
 
 <body>
-    <div class="box">
-        <div class="wrapper">
-            <div class="contents">
-                <div class="notice">
-                    <div class="tabs">
-                        <div class="region-jobs">지역 선택</div>
-                        <div class="Job-jobs">직업 선택</div>
-                        <input type="search" name="" id="sea-inp" placeholder="검색어 입력">
+    <div class="wrapper">
+        <div class="contents">
+            <div class="notice">
+                <div class="tabs">
+                    <div class="region-jobs">지역 선택</div>
+                    <div class="Job-jobs">직업 선택</div>
+                    <input type="search" name="" id="sea-inp" placeholder="검색어 입력">
+                </div>
+                <div class="region-box">
+                    <div class="do-jobs">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="seoul">서울</div>
+                                </td>
+                                <td>
+                                    <div class="gyeonggi">경기도</div>
+                                </td>
+                                <td>
+                                    <div>서울</div>
+                                </td>
+                                <td>
+                                    <div>서울</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>서울</div>
+                                </td>
+                                <td>
+                                    <div>서울</div>
+                                </td>
+                                <td>
+                                    <div>서울</div>
+                                </td>
+                                <td>
+                                    <div>서울</div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="region-box">
-                        <div class="do-jobs">
-                            <table>
-                                <tr>
-                                    <td><div class="seoul">서울</div></td>
-                                    <td><div class="gyeonggi">경기도</div></td>
-                                    <td><div>서울</div></td>
-                                    <td><div>서울</div></td>
-                                </tr>
-                                <tr>
-                                    <td><div>서울</div></td>
-                                    <td><div>서울</div></td>
-                                    <td><div>서울</div></td>
-                                    <td><div>서울</div></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="go-jobs">
-                            <table class="seoul-box">
-                                <tr>
-                                    <td><label for="all"><input type="checkbox" name="" id="all">&nbsp;서울 전체</label></td>
-                                    <td><label for="a"><input type="checkbox" name="" id="a">&nbsp;강남구</label></td>
-                                    <td><label for="b"><input type="checkbox" name="" id="b">&nbsp;강동구</label></td>
-                                    <td><label for="c"><input type="checkbox" name="" id="c">&nbsp;서울 전체</label></td>
-                                    <td><label for="d"><input type="checkbox" name="" id="d">&nbsp;강남구</label></td>
-                                    <td><label for="e"><input type="checkbox" name="" id="e">&nbsp;강동구</label></td>
-                                    <td><label for="f"><input type="checkbox" name="" id="f">&nbsp;서울 전체</label></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="g"><input type="checkbox" name="" id="g">&nbsp;서울 전체</label></td>
-                                    <td><label for="h"><input type="checkbox" name="" id="h">&nbsp;강남구</label></td>
-                                    <td><label for="i"><input type="checkbox" name="" id="i">&nbsp;강동구</label></td>
-                                    <td><label for="j"><input type="checkbox" name="" id="j">&nbsp;서울 전체</label></td>
-                                    <td><label for="k"><input type="checkbox" name="" id="k">&nbsp;강남구</label></td>
-                                    <td><label for="l"><input type="checkbox" name="" id="l">&nbsp;강동구</label></td>
-                                    <td><label for="m"><input type="checkbox" name="" id="m">&nbsp;서울 전체</label></td>
-                                </tr>
-                            </table>
-                            <table class="gyeonggi-box">
-                                <tr>
-                                    <td><label for="all"><input type="checkbox" name="" id="all">&nbsp;서울 전체</label></td>
-                                    <td><label for="a"><input type="checkbox" name="" id="a">&nbsp;강남구</label></td>
-                                    <td><label for="b"><input type="checkbox" name="" id="b">&nbsp;강동구</label></td>
-                                    <td><label for="c"><input type="checkbox" name="" id="c">&nbsp;서울 전체</label></td>
-                                    <td><label for="d"><input type="checkbox" name="" id="d">&nbsp;강남구</label></td>
-                                    <td><label for="e"><input type="checkbox" name="" id="e">&nbsp;강동구</label></td>
-                                    <td><label for="f"><input type="checkbox" name="" id="f">&nbsp;서울 전체</label></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="g"><input type="checkbox" name="" id="g">&nbsp;서울 전체</label></td>
-                                    <td><label for="h"><input type="checkbox" name="" id="h">&nbsp;강남구</label></td>
-                                    <td><label for="i"><input type="checkbox" name="" id="i">&nbsp;강동구</label></td>
-                                    <td><label for="j"><input type="checkbox" name="" id="j">&nbsp;서울 전체</label></td>
-                                    <td><label for="k"><input type="checkbox" name="" id="k">&nbsp;강남구</label></td>
-                                    <td><label for="l"><input type="checkbox" name="" id="l">&nbsp;강동구</label></td>
-                                    <td><label for="m"><input type="checkbox" name="" id="m">&nbsp;서울 전체</label></td>
-                                </tr>
-                            </table>
-                        </div>
+                    <div class="go-jobs">
+                        <table class="seoul-box">
+                            <tr>
+                                <td><label for="all"><input type="checkbox" name="" id="all">&nbsp;서울 전체</label></td>
+                                <td><label for="a"><input type="checkbox" name="" id="a">&nbsp;강남구</label></td>
+                                <td><label for="b"><input type="checkbox" name="" id="b">&nbsp;강동구</label></td>
+                                <td><label for="c"><input type="checkbox" name="" id="c">&nbsp;서울 전체</label></td>
+                                <td><label for="d"><input type="checkbox" name="" id="d">&nbsp;강남구</label></td>
+                                <td><label for="e"><input type="checkbox" name="" id="e">&nbsp;강동구</label></td>
+                                <td><label for="f"><input type="checkbox" name="" id="f">&nbsp;서울 전체</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="g"><input type="checkbox" name="" id="g">&nbsp;서울 전체</label></td>
+                                <td><label for="h"><input type="checkbox" name="" id="h">&nbsp;강남구</label></td>
+                                <td><label for="i"><input type="checkbox" name="" id="i">&nbsp;강동구</label></td>
+                                <td><label for="j"><input type="checkbox" name="" id="j">&nbsp;서울 전체</label></td>
+                                <td><label for="k"><input type="checkbox" name="" id="k">&nbsp;강남구</label></td>
+                                <td><label for="l"><input type="checkbox" name="" id="l">&nbsp;강동구</label></td>
+                                <td><label for="m"><input type="checkbox" name="" id="m">&nbsp;서울 전체</label></td>
+                            </tr>
+                        </table>
+                        <table class="gyeonggi-box">
+                            <tr>
+                                <td><label for="all"><input type="checkbox" name="" id="all">&nbsp;경기도 전체</label></td>
+                                <td><label for="a"><input type="checkbox" name="" id="a">&nbsp;가평군</label></td>
+                                <td><label for="b"><input type="checkbox" name="" id="b">&nbsp;고양시</label></td>
+                                <td><label for="c"><input type="checkbox" name="" id="c">&nbsp;안여</label></td>
+                                <td><label for="d"><input type="checkbox" name="" id="d">&nbsp;강남구</label></td>
+                                <td><label for="e"><input type="checkbox" name="" id="e">&nbsp;강동구</label></td>
+                                <td><label for="f"><input type="checkbox" name="" id="f">&nbsp;서울 전체</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="g"><input type="checkbox" name="" id="g">&nbsp;서울 전체</label></td>
+                                <td><label for="h"><input type="checkbox" name="" id="h">&nbsp;강남구</label></td>
+                                <td><label for="i"><input type="checkbox" name="" id="i">&nbsp;강동구</label></td>
+                                <td><label for="j"><input type="checkbox" name="" id="j">&nbsp;서울 전체</label></td>
+                                <td><label for="k"><input type="checkbox" name="" id="k">&nbsp;강남구</label></td>
+                                <td><label for="l"><input type="checkbox" name="" id="l">&nbsp;강동구</label></td>
+                                <td><label for="m"><input type="checkbox" name="" id="m">&nbsp;서울 전체</label></td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="test">
-                        <input type="text" name="" id=""><input type="text" name="" id=""><input type="text" name=""
-                            id="">
-                    </div>
-
-                    <!-- 
+                </div>
+                <div class="test">
+                    <input type="text" name="" id=""><input type="text" name="" id=""><input type="text" name="" id="">
+                </div>
+                <div class="box">
                     <div class="index-box">
                         <div class="enterprise">
-                            <!-- 기업 로고 
+                            <!-- 기업 로고 -->
                             <img src="https://www.viewhotels.jp/asakusa-annex/wp-content/uploads/sites/6/2020/03/test-img.jpg"
                                 alt="logo"> <br>
-                            <!-- 기업 이름 
+                            <!-- 기업 이름 -->
                             <b>&nbsp; enterprise</b><br>
-                            <!-- 간단한 취업 정보 
+                            <!-- 간단한 취업 정보 -->
                             <label for="">&nbsp; 간단한 정보 </label>
                         </div>
                         <div class="etc-box">
-                            <!-- D-day 
+                            <!-- D-day -->
                             <div class="day">
                                 &nbsp;<label for=""> D - ? </label>
                             </div>
-                            <!-- 관심 기업 
+                            <!-- 관심 기업 -->
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-star" viewBox="0 0 16 16">
@@ -122,10 +136,10 @@
                     <div class="index-box"></div>
                     <div class="index-box"></div>
                     <div class="index-box"></div>
-                </div> -->
+                </div>
 
-                    <script src="/js/Jobs-script.js"></script>
-                    <script src="/js/jquery-3.1.1.js"></script>
+                <script src="/js/Jobs-script.js"></script>
+                <script src="/js/jquery-3.1.1.js"></script>
 </body>
 
 </html>

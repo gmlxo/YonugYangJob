@@ -1,0 +1,48 @@
+table {
+    text-align: center;
+    margin: 0 auto;
+    border-spacing: 0px;
+}
+
+td{
+    width: 100px;
+    height: 60px;
+    border: 1px solid #888;
+    background-color: rgb(210, 210, 210);
+}
+
+label {
+    font-size: 20px;
+}
+
+#col3 {
+    width: 610px;
+    /* font-size: 20px; */
+}
+
+input[type=reset],
+input[type=submit] {
+    width: 360px;
+    color: #fff;
+    background-color: #888;
+    border: none;
+    font-size: 17px;
+}
+
+input[type=reset]:hover,
+input[type=submit]:hover {
+    color: #000;
+    background-color: #fff;
+    border: none;
+}
+
+input {
+    width: 245px;
+    height: 60px;
+}
+
+#text{
+    height: 230px;
+    width: 610px;
+    resize: none;
+}
