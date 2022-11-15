@@ -1,0 +1,37 @@
+*{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.set, .headerEnt{
+    width: 500px;
+    margin: auto;
+}
+.set{
+    border: 1.5px solid rgb(240, 240, 240);
+}
+.declaration{
+    margin-top: 25px;
+}
+.tit-box, .pro-box{
+    display: flex;
+    /* float: left; */
+    justify-content: space-between;
+}
+.profile > img{
+    border: .7px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.profileText{
+    font-size: 13px;
+    margin-left: 70px;
+    margin-top: -35px;
+}
+.comment > a{
+    font-size: 30px;
+    margin-top: 10px;
+}
