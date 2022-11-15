@@ -1,8 +1,9 @@
 .wrapper{
-    margin: 0 auto;
+    width: 500px;
+    margin: auto;
 }
 .headerEnt{
-    margin: 0 auto;
+    margin: auto;
     float: left;
     border-bottom: 1px solid #000;
     width: 500px;
