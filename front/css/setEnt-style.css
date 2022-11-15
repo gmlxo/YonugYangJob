@@ -5,7 +5,7 @@
 a:hover{
     text-decoration: underline;
 }
-.set, .headerEnt{
+.set, .headerEnt, .entComent{
     width: 500px;
     margin: auto;
 }
@@ -13,7 +13,7 @@ a:hover{
     border: 1.5px solid rgb(240, 240, 240);
 }
 .declaration{
-    margin-top: 25px;
+    margin-top: 23px;
 }
 .tit-box, .pro-box{
     display: flex;
@@ -34,4 +34,21 @@ a:hover{
 .comment > a{
     font-size: 30px;
     margin-top: 10px;
+}
+.entContents{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    height: 300px;
+}
+.entComent{
+    margin-top: 25px;
+    border: 1.5px solid rgb(240, 240, 240);
+}
+input[type=text]{
+    width: 400px;
+    height: 70px;
+}
+input[type=submit]{
+    width: 87.6px;
+    height: 75px;
 }
