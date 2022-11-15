@@ -1,8 +1,9 @@
-.box{
-    /* margin-top: 10px; */
+.box {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-} 
+}
+
 .index-box {
     margin: 10px;
     width: 338px;
@@ -12,7 +13,31 @@
     position: relative;
 }
 
-.index-box:hover{
+.job-sea {
+    margin: 0 auto;
+    height: 27.5px;
+    width: 190px;
+    float: right;
+    margin-right: 30px;
+    border: 1px solid rgb(165, 120, 207);
+}
+
+input[type=search] {
+    height: 27.4px;
+    width: 135.38px;
+    border: none;
+}
+
+input[type=submit] {
+    margin-top: -1px;
+    border: none;
+    width: 50.4px;
+    height: 27.4px;
+    color: #000;
+    background-color: #fff;
+}
+
+.index-box:hover {
     border: 2.5px solid rgb(122, 17, 171);
 }
 

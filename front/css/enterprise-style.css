@@ -1,6 +1,40 @@
-table{
-    border: 1px solid red;
-    border-spacing: 0px 50px 7px 0px;
+.wrapper{
+    margin: 0 auto;
+}
+.headerEnt{
+    margin: 0 auto;
+    float: left;
+    border-bottom: 1px solid #000;
+    width: 500px;
     text-align: left;
+    font-size: 15px;
+    color: #888;
+}
+.headerEnt > label > b{
+    font-size: 20px;
+    color: #000;
+}
+.contentsEnt{
     margin-top: -17px;
+    width: 500px;
+}
+table{
+    font-size: 13px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(170, 170, 170);
+}
+dl{
+    margin: 0;
+}
+dt{
+    color: #777;
+    width: 100px;
+    float: left;
+}
+dd{
+    width: 200px;
+}
+.line{
+    width: 500px;
+    border-bottom: 1px solid #888;
 }
