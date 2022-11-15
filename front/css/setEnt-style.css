@@ -6,6 +6,7 @@ a:hover{
     text-decoration: underline;
 }
 .set, .headerEnt, .entComent{
+    border-radius: 5px;
     width: 500px;
     margin: auto;
 }
@@ -51,4 +52,10 @@ input[type=text]{
 input[type=submit]{
     width: 87.6px;
     height: 75px;
+}
+.setCom > img{
+    height: 30px;
+    width: 30px;
+    border: .7px solid #000;
+    border-radius: 50%;
 }
