@@ -40,7 +40,6 @@
         </footer>
     </div>
 
-    <script src="js/menu-script.js"></script>
-    <script src="js/jquery-3.1.1.js"></script>
+    <script src="/js/menu_script.js"></script>
 </body>
 </html>

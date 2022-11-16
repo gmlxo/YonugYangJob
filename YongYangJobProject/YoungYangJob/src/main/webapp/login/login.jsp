@@ -1,12 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/css/login_style.css">
+
 	<div class="login-box">
         <h1>Sign in</h1>
         <form action="#" method="post">
@@ -26,5 +23,5 @@
             </div>
         </form>
     </div>
-</body>
-</html>
+    
+<%@ include file="/footer.jsp" %>

@@ -1,14 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/css/setEnt_style.css">
+
 	<div class="headerEnt">
-        <a href="#">
+        <a href="/Information/community.html">
             < 전체 게시글 </a>
     </div>
     <br>
@@ -64,5 +61,5 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+
+<%@ include file="/footer.jsp" %>

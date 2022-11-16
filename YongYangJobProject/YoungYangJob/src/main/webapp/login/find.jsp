@@ -1,12 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/css/find_style.css">
+
 	` <div class="wrapper">
         <div class="contents">
             <div class="notice">
@@ -38,11 +35,9 @@
                         </tr>
                     </table>
                 </div>
-
-                <script src="/js/jquery-3.1.1.js"></script>
-                <script src="/js/find-script.js"></script>
+                <script src="/js/find_script.js"></script>
             </div>
         </div>
     </div>
-</body>
-</html>
+    
+<%@ include file="/footer.jsp" %>

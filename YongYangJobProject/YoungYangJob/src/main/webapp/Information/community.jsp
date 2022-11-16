@@ -1,12 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/css/community_style.css">
+
 	<div class="wrapper">
         <div class="contentsNity">
             <h3>title</h3>
@@ -31,5 +28,4 @@
             <div class="line"></div>
         </div>
     </div>
-</body>
-</html>
+<%@ include file="/footer.jsp" %>
