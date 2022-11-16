@@ -1,7 +1,5 @@
-body{
-    background-color: rgb(241, 241, 241);
-}
-*{
+
+a{
     text-decoration: none;
     color: #000;
 }
@@ -9,15 +7,14 @@ a:hover{
     text-decoration: underline;
 }
 .wrapper {
-    background-color: #fff;
     margin: auto;
     width: 930px;
     border-radius: 5px;
 }
 .uploadAnn{
-    margin: auto;
+    /* margin: auto; */
     margin-top: 10px;
-    width: 930px;
+    width: 920px;
 }
 .head{
     border-bottom: 1px solid #888;
@@ -31,17 +28,22 @@ a:hover{
 .title_ann_upload{
     font-size: 20px;
 }
-/* .contentsAnn{
-    width: 750px;
-} */
 dl{
-    width: 230px;
-}
-dd{
-    font-size: 14px;
-    color: #777;
+    width: 395px;
 }
 dt{
     float: left;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+table{
+	border-spacing: 100px;
+}
+
+.wrapper_{
+    width: 930px;
+    margin: auto;
+}
+input {
+    width: 200px;
 }

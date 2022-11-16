@@ -1,16 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/css/upload_style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/uploadEnt-style.css">
-    <title>uplodEnterprise</title>
-</head>
-
-<body>
-    <div class="wrapper">
+	<div class="wrapper_">
         <div class="uploadEnt">
             <table>
                 <tr>
@@ -40,6 +34,5 @@
             </table>
         </div>
     </div>
-</body>
 
-</html>
+<%@ include file="/footer.jsp" %>

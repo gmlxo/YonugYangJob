@@ -1,14 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/uploadAnn-style.css">
-    <title>uplod ann</title>
-</head>
-<body>
-    <div class="wrapper">
+<%@ include file="/header.jsp" %>
+<link rel="stylesheet" href="/css/upload_style.css">
+
+	<div class="wrapper">
         <div class="uploadAnn">
             <div class="headAnn">
                 <div class="company_name">
@@ -44,12 +40,6 @@
                                 <dd>계약직</dd>
                             </dl>
                         </td>
-                        <td>
-                            <dl>
-                                <dt>연락처</dt>
-                                <dd>msaaa794274@gmail.com</dd>
-                            </dl>
-                        </td>
                     </tr>
                 </table>
                 <label> 내용's<br>
@@ -61,5 +51,5 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+    
+<%@ include file="/footer.jsp" %>
