@@ -12,16 +12,12 @@
                 <label>ID</label>
             </div>
             <div class="login-box-input">
-                <input type="password" name="password" required>
-                <label>Password</label>
-            </div>
-            <div class="login-box-input">
                 <input type="text" name="name" required>
                 <label>Name</label>
             </div>
             <div class="login-box-input">
-                <input type="text" name="date_of_birth" required>
-                <label>Birth</label>
+                <input type="password" name="password" required>
+                <label>Password</label>
             </div>
             <div class="login-box-input">
                 <input type="text" name="email" required>
