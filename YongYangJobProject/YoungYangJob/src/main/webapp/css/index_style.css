@@ -15,10 +15,11 @@
 
 .job-sea {
     margin: 0 auto;
-    height: 27.5px;
-    width: 190px;
+    height: 29.3px;
+    font-size: 13px;
+    width: 192px;
     float: right;
-    margin-right: 30px;
+    margin-right: 50px;
     border: 1px solid rgb(165, 120, 207);
 }
 

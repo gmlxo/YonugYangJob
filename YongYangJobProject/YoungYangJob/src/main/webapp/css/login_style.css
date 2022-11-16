@@ -1,7 +1,15 @@
 *{
     text-decoration: none;
 }
-.login-box {
+.wrapper{
+	margin-top: 30px;
+	height: 400px;
+}
+.wrapper_up{
+	height: 560px;
+}
+.login-box,.sign-box {
+	margin-top: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,19 +19,22 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
+.sign-box{
+	margin-top: 120px;
+}
 
-.login-box h1 {
+.login-box h1, .sign-box h1 {
     margin: 0 0 30px;
     padding: 0;
     color: #000;
     text-align: center;
 }
 
-.login-box .login-box-input {
+.login-box-input {
     position: relative;
 }
 
-.login-box .login-box-input input {
+.login-box-input input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -34,8 +45,7 @@
     outline: none;
     background: transparent;
 }
-
-.login-box .login-box-input label {
+.login-box-input label {
     position: absolute;
     top: 0;
     left: 0;
@@ -78,11 +88,13 @@
     color: #fff;
 }
 .login-label a{
+	text-decoration: none;
     color: rgb(103, 101, 101);
 }
 
 .login-label a:hover{
     color: blue;
+    text-decoration: underline;
 }
 .login-box .login-label label {
     vertical-align: -20px;

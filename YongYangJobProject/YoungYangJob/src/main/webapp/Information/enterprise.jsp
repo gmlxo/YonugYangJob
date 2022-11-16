@@ -23,7 +23,8 @@
                             <td>
                                 <dl>
                                     <dt>대표자</dt>
-                                    <dd>name</dd>
+                                    <dd class="size-dl">name</dd>
+                                    </dl>
                             </td>
                         </tr>
                         <tr>
@@ -36,7 +37,8 @@
                             <td>
                                 <dl>
                                     <dt>기업 주소</dt>
-                                    <dd>경기도 수정구 남문로 82</dd>
+                                    <dd class="size-dl">경기도 수정구 남문로 82</dd>
+                                </dl>
                             </td>
                         </tr>
                     </table>
@@ -44,17 +46,45 @@
             </div>
             <br>
             <div class="line"></div>
-            <div class="ent">
+
+<div class="ent">
                 <h3>기업 명</h3>
                 <div class="contentsEnt">
                     <table>
                         <tr>
-                            <td>adsf</td>
-                            <td>asfdass</td>
+                            <td>
+                                <dl>
+                                    <dt>설립일</dt>
+                                    <dd>YYYY MM DD</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <dt>대표자</dt>
+                                    <dd class="size-dl">name</dd>
+                                    </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>업종</dt>
+                                    <dd>sectors</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <dt>기업 주소</dt>
+                                    <dd class="size-dl">서울시 강서구 양천로 401, B동 606호 </dd>
+                                </dl>
+                            </td>
                         </tr>
                     </table>
                 </div>
             </div>
-        </div>
-
+            <br>
+            <div class="line"></div>
+           
+           </div>
+            </div>
 <%@ include file="/footer.jsp" %>

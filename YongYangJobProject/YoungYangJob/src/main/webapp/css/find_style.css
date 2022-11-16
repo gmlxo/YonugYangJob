@@ -6,12 +6,11 @@
 }
 
 .wrapper {
-    width: 1200px;
-    margin: 0 auto;
+    width: 1000px;
 }
 
 .contents {
-    width: 1200px;
+    width: 1000px;
     height: 200px;
 }
 

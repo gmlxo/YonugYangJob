@@ -11,13 +11,16 @@
     font-size: 15px;
     color: #888;
 }
+.ent{
+	margin-top: 20px;
+}
 .headerEnt > label > b{
     font-size: 20px;
     color: #000;
 }
 .contentsEnt{
-    margin-top: -17px;
-    width: 500px;
+    /* margin-top: -17px; */
+    width: 600px;
 }
 table{
     font-size: 13px;
@@ -26,14 +29,18 @@ table{
 }
 dl{
     margin: 0;
+    margin-left: 3px;
 }
 dt{
     color: #777;
-    width: 100px;
+    width: 60px;
     float: left;
 }
 dd{
     width: 200px;
+}
+.size-dl {
+	width: 290px;
 }
 .line{
     width: 500px;

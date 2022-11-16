@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/login_style.css">
-
+<div class="wrapper">
 	<div class="login-box">
         <h1>Sign in</h1>
         <form action="#" method="post">
@@ -18,10 +18,10 @@
             </div>
             <div class="login-label">
                 <input type="submit" value="Sign in"><br>
-                <label><a href="signUp.html">Sign Up</a> &nbsp; | 
-                &nbsp; <a href="find.html">Find ID/Password</a></label>
+                <label><a href="signUP.jsp">Sign Up</a> &nbsp; | 
+                &nbsp; <a href="find.jsp">Find ID/Password</a></label>
             </div>
         </form>
     </div>
-    
+</div>
 <%@ include file="/footer.jsp" %>

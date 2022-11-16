@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Yang Yang Job</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -23,11 +23,11 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="/Information/jobs.html" class="nav-link px-2 link-dark hov"> 채용정보 </a></li>
-                <li><a href="/Information/enterprise.html" class="nav-link px-2 link-dark hov"> 기업정보 </a></li>
-                <li><a href="/Information/community.html" class="nav-link link-dark hov"> 커뮤니티 </a></li>
-                <li><a href="/pop up/search-pop_up.html" id="search" class="nav-link px-2 link-dark">
+                <li><a href="/index.jsp" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="/Information/jobs.jsp" class="nav-link px-2 link-dark hov"> 채용정보 </a></li>
+                <li><a href="/Information/enterprise.jsp" class="nav-link px-2 link-dark hov"> 기업정보 </a></li>
+                <li><a href="/Information/community.jsp" class="nav-link link-dark hov"> 커뮤니티 </a></li>
+                <li><a href="/pop up/search_popUP.jsp" id="search" class="nav-link px-2 link-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
                             <path
@@ -38,9 +38,9 @@
             <div class="col-md-3 text-end">
                 <!-- 로그인 버튼 -->
                 <button type="button" class="btn btn-outline-primary me-2"
-                    onclick="location.href='login/login.html'">Sign in</button>
+                    onclick="location.href='/login/login.jsp'">Sign in</button>
                 <!-- 회원가입 버튼 -->
-                <button type="button" class="btn btn-primary" onclick="location.href='login/signUp.html'">
+                <button type="button" class="btn btn-primary" onclick="location.href='/login/signUP.jsp'">
                     Sign up</button>
             </div>
         </header>

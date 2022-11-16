@@ -4,7 +4,7 @@
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/find_style.css">
 
-	` <div class="wrapper">
+	 <div class="wrapper">
         <div class="contents">
             <div class="notice">
                 <div class="tabs">

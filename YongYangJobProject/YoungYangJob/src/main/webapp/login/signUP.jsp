@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/login_style.css">
-
-	<div class="login-box">
+<div class="wrapper_up">
+	<div class="sign-box">
         <h1>sign up</h1>
         <form action="#" method="post">
             <div class="login-box-input">
@@ -32,5 +32,5 @@
             </div>
         </form>
     </div>
-    
+</div>
 <%@ include file="/footer.jsp" %>
