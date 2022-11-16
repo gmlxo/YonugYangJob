@@ -1,0 +1,64 @@
+.box {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-box {
+    margin: 10px;
+    width: 338px;
+    height: 200px;
+    border: 1px solid rgb(122, 17, 171);
+    overflow: hidden;
+    position: relative;
+}
+
+.job-sea {
+    margin: 0 auto;
+    height: 27.5px;
+    width: 190px;
+    float: right;
+    margin-right: 30px;
+    border: 1px solid rgb(165, 120, 207);
+}
+
+input[type=search] {
+    height: 27.4px;
+    width: 135.38px;
+    border: none;
+}
+
+input[type=submit] {
+    margin-top: -1px;
+    border: none;
+    width: 50.4px;
+    height: 27.4px;
+    color: #000;
+    background-color: #fff;
+}
+
+.index-box:hover {
+    border: 2.5px solid rgb(122, 17, 171);
+}
+
+.index-box>.enterprise>img {
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 332px;
+    height: 80px;
+}
+
+.index-box>.enterprise>label {
+    font-size: 13px;
+}
+
+.index-box>.etc-box {
+    position: absolute;
+    bottom: 0%;
+}
+
+.etc-box {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,90 @@
+*{
+    text-decoration: none;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -60%);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000;
+    text-align: center;
+}
+
+.login-box .login-box-input {
+    position: relative;
+}
+
+.login-box .login-box-input input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .login-box-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    pointer-events: 1px #000;
+    transition: .5s;
+}
+
+.login-box-input :focus~label,
+.login-box-input :valid~label,
+.login-box-input :hover~label,
+.login-box-input label:hover {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    transition: .6s;
+}
+
+.login-label input {
+    padding: 16px 138px;
+    font-size: 20px;
+    border-radius: 6px;
+    background: none;
+    color: #000;
+}
+.login-label #signUp-but{
+    padding: 16px 125px;
+    font-size: 20px;
+    border-radius: 6px;
+    background: none;
+    color: #000;
+}
+
+.login-label input:hover,
+.login-label #signUp-but:hover{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+}
+.login-label a{
+    color: rgb(103, 101, 101);
+}
+
+.login-label a:hover{
+    color: blue;
+}
+.login-box .login-label label {
+    vertical-align: -20px;
+    color: #000;
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contents {
+    width: 1200px;
+    height: 200px;
+}
+
+.notice {
+    width: 400px;
+    height: 200px;
+    padding: 20px 20px 0 0;
+    margin: 0 auto;
+}
+
+.tabs {
+    width: 450px;
+    height: 50px;
+}
+
+.tabs>div {
+    float: left;
+    height: 50px;
+    width: 225px;
+    border: 1px solid #000;
+    background-color: #888;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.tabs .tab-id-find {
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+.tabs .tab-pw-find {
+    border-left: 0;
+}
+
+.id-find-box,
+.pw-find-box {
+    margin-top: -1px;
+    width: 450px;
+    height: 120px;
+    border: 1px solid #000;
+    padding-left: 5px;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#inp {
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+}
+
+#bor {
+    border: 0.6px solid;
+    height: 50px;
+    width: 315px;
+}
+
+#col {
+    font-size: 17px;
+    height: 30px;
+    width: 100px;
+    border: 0.6px solid rgb(139, 139, 139);
+    background-color: rgb(211, 211, 211);
+}

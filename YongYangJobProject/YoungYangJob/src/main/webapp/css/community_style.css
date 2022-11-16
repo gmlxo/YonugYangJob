@@ -1,0 +1,27 @@
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+.contentsNity > h3{
+    color: #000;
+}
+.contentsNity{
+    color: #666;
+}
+.content{
+    margin-top: -15px;
+}
+.etcCon{
+    margin-top: 5px;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.line{
+    margin-top: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.contentsNity:hover h3{
+    text-decoration: underline;
+}

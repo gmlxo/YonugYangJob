@@ -1,0 +1,90 @@
+/* header and footer css */
+p {
+    font-size: 50px;
+}
+.hov:hover{
+    text-decoration: underline !important;
+}
+.text-end > .me-2{
+    border: 1px solid #000;
+    color: #000;
+}
+.text-end > .btn-primary{
+    background-color: rgb(78, 78, 78);
+    color: #fff;
+    border: none;
+}
+
+.text-end > button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.form-control {
+    width: 450px;
+}
+
+.d-flex>a {
+    font-size: 20px;
+    color: #000;
+}
+
+/* pop up _ search css */
+.box-popUp {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    /* display: none; */
+}
+
+.search-box-popUp {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+    top: 7px;
+    width: 381.782px;
+    height: 34px;
+    font-size: 15px;
+    /* text-align: center; */
+    border: 1px solid #000;
+}
+
+.search-box-popUp:active,
+.search-box-popUp:hover {
+    border: 2px solid rgb(51, 51, 217);
+}
+
+.search-box-popUp input {
+    border: none;
+    font-size: 17px;
+    height: 33px;
+}
+
+.search-box-popUp input[type=search] {
+    width: 300px;
+    outline: none;
+}
+
+.search-box-popUp input[type=submit] {
+    border-radius: 0 2px 3px 0;
+    width: 53.94px;
+    height: 34.5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* pop up _ contents css */
+.contents-box {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 381.782px;
+    height: 240px;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+.contents-box p {
+    font-size: 12px;
+}
