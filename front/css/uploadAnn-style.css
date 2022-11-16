@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+*{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: underline;
+}
+.wrapper {
+    background-color: #fff;
+    margin: auto;
+    width: 830px;
+    border-radius: 5px;
+}
+.uploadAnn{
+    margin: auto;
+    margin-top: 10px;
+    width: 800px;
+}
+.head{
+    border-bottom: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+}
+.company_name{
+    font-size: 13px;
+    color: #777;
+}
+.title_ann_upload{
+    font-size: 20px;
+}
+/* .contentsAnn{
+    width: 750px;
+} */
+dl{
+    width: 340px;
+}
+dt{
+    float: left;
+}
