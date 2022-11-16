@@ -1,61 +1,106 @@
-*{
+* {
     color: #000;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-.set, .headerEnt, .entComent{
+
+.set,
+.headerEnt,
+.entComent,
+.setComent {
     border-radius: 5px;
     width: 500px;
     margin: auto;
 }
-.set{
+
+.set {
     border: 1.5px solid rgb(240, 240, 240);
 }
-.declaration{
+
+.declaration {
     margin-top: 23px;
 }
-.tit-box, .pro-box{
+
+.tit-box,
+.pro-box {
     display: flex;
-    /* float: left; */
     justify-content: space-between;
 }
-.profile > img{
+
+.profile>img {
     border: .7px solid #000;
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
-.profileText{
+
+.profileText {
     font-size: 13px;
     margin-left: 70px;
     margin-top: -35px;
 }
-.comment > a{
+
+.comment>a {
     font-size: 30px;
     margin-top: 10px;
 }
-.entContents{
+
+.entContents {
     /* border: 1px solid red; */
     margin-top: 10px;
     height: 300px;
 }
-.entComent{
+
+.entComent {
     margin-top: 25px;
     border: 1.5px solid rgb(240, 240, 240);
+    height: 76px;
 }
-input[type=text]{
+
+textarea {
     width: 400px;
     height: 70px;
+    resize: none;
 }
-input[type=submit]{
+
+input[type=submit] {
     width: 87.6px;
-    height: 75px;
+    height: 70px;
 }
-.setCom > img{
-    height: 30px;
-    width: 30px;
+
+.setCom {
+    display: flex;
+    margin-top: 20px;
+}
+
+.comProfileText{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.setTitCom {
+    width: 800px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.comProfileText {
+    font-size: 13px;
+}
+.dayCom {
+    font-size: 13px;
+    color: #888;
+}
+.setCom>img {
+    height: 25px;
+    width: 25px;
     border: .7px solid #000;
     border-radius: 50%;
+}
+.setComent {
+    height: 35px;
+    border-bottom: 1px solid rgb(240, 240, 240);
 }
