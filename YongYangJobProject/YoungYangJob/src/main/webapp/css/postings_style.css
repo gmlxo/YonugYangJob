@@ -35,11 +35,13 @@ input[type=submit]:hover {
     border: none;
 }
 
-input {
+input, select {
     width: 245px;
     height: 60px;
 }
-
+select {
+    text-align: center;
+}
 #text {
     height: 230px;
     width: 610px;
