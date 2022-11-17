@@ -6,7 +6,7 @@
 <div class="wrapper_up">
 	<div class="sign-box">
         <h1>sign up</h1>
-        <form action="#" method="post">
+        <form action="/signUp" method="post">
             <div class="login-box-input">
                 <input type="text" name="id" required>
                 <label>ID</label>
@@ -16,7 +16,7 @@
                 <label>Name</label>
             </div>
             <div class="login-box-input">
-                <input type="password" name="password" required>
+                <input type="password" name="pwd" required>
                 <label>Password</label>
             </div>
             <div class="login-box-input">

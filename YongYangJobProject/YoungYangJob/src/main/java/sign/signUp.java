@@ -1,4 +1,4 @@
-package biz;
+package sign;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,22 +8,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import dao.UserDAO;
 
-/**
- * Servlet implementation class login
- */
-@WebServlet("/login")
-public class login extends HttpServlet {
+@WebServlet("/signUp")
+public class signUp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public login() {
+    public signUp() {
         super();
-        // TODO Auto-generated constructor stub
     }
-    
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		한글 인코딩 설정
@@ -33,23 +28,19 @@ public class login extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		UserDAO dao = new UserDAO();
-		String id, pwd;
-
-//		세션생성
-		HttpSession session = request.getSession();
-//		DB에서 유저의 ID와 PASSWORD가져오기
+		String id, name, pwd, email;
+		
 		id = request.getParameter("id");
+		name = request.getParameter("name");
 		pwd = request.getParameter("pwd");
-
-		String[] log = dao.login(id, pwd);
-
-		if (log != null) {
-			session.setAttribute("logOK", log[0]);
-			session.setAttribute("type", log[1]);
-			response.sendRedirect("/index.jsp");
-		} else {
-			out.println("<script> alert(\"로그인에 실패하였습니다.\"); history.go(-1); </script>");
-		}
+		email = request.getParameter("email");
+		
+		int n = dao.sign_up(id, name, pwd, email);
+		
+		if(n>0) 
+			response.sendRedirect("/login/login.jsp");
+		else
+			out.println("<script> alert(\"회원가입에 실패하였습니다.\"); history.go(-1); </script>");
 	}
 
 }
