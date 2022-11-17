@@ -49,9 +49,26 @@ dt {
 }
 
 input {
+	margin-left: 5px;
 	width: 200px;
 }
-
+textarea{
+	resize: none;
+	margin-left: 5px;
+	width: 200px;
+	height: 60px;
+}
+#sub{
+	border: none;
+	background-color: rgb(78, 78, 78);
+	color: #fff;
+	margin-top: 10px;
+    /* margin: auto; */
+    width: 150px;
+}
+#sub:hover{
+	background-color: #000;
+}
 .sup {
 	width: 930px;
 	margin: auto;

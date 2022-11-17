@@ -6,32 +6,42 @@
 
 	<div class="wrapper_">
         <div class="uploadEnt">
-            <table>
+            <form action="/addEnt" method="get">
+            	<table>
                 <tr>
                     <td>기업명</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="ent_name"></td>
                 </tr>
                 <tr>
                     <td>대표자</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="representative"></td>
                 </tr>
                 <tr>
                     <td>업종</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="sectors"></td>
                 </tr>
                 <tr>
                     <td>홈페이지</td>
-                    <td><input type="url" name="" id=""></td>
+                    <td><input type="url" name="url"></td>
                 </tr>
                 <tr>
                     <td>설립일</td>
-                    <td><input type="date" name="" id=""></td>
+                    <td><input type="date" name="establishment_date"></td>
                 </tr>
                 <tr>
                     <td>주소</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>기업 소개</td>
+                    <td><textarea name="explanation"cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                	<td></td>
+                	<td><input type="submit" value="추가하기" id="sub"></td>
                 </tr>
             </table>
+            </form>
         </div>
     </div>
 

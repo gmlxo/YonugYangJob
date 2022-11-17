@@ -7,6 +7,7 @@ public class EnterpriseVO {
 	private String representative;
 	private String address;
 	private String url;
+	private String explanation;
 	
 	public EnterpriseVO() {
 		super();
@@ -58,5 +59,13 @@ public class EnterpriseVO {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
 	}
 }

@@ -9,12 +9,12 @@ CREATE TABLE user_tbl_gmlxo(
 );
 
 CREATE TABLE enterprise_tbl_gmlxo (
-    ent_name varchar2(255) CONSTRAINT ent_gmlxo_name_pk primary key,
-    sectors varchar2(255) CONSTRAINT ent_gmlxo_name_uq unique,
-    establishment_date date,
-    representative varchar2(255),
-    address varchar2(255) CONSTRAINT ent_gmlxo_add_uq unique,
-    url varchar2(4000)
+    ent_name varchar2(255) CONSTRAINT ent_gmlxo_name_pk primary key, -- 기업명
+    sectors varchar2(255) CONSTRAINT ent_gmlxo_sectors_uq unique, -- 업종
+    establishment_date date, -- 설립일
+    representative varchar2(255), -- 대표자
+    address varchar2(255), -- 주소
+    url varchar2(4000) 
 );
 
 CREATE TABLE support_tbl_gmlxo (
@@ -51,8 +51,6 @@ CREATE TABLE comment_tbl_gmlxo (
     com_contents varchar2(4000)
 );
 
-DROP TABLE support_tbl_gmlxo;
-
 /* insert */
 --user
 insert into user_tbl_gmlxo values ('admin', 'admin', '1234', sysdate, 'test@gmail.com', '3');
@@ -61,4 +59,7 @@ insert into user_tbl_gmlxo values ('a', 'a', 'a', sysdate, 'test2@gmail.com', '4
 /* test query */
 select * from user_tbl_gmlxo;
 select * from user_tbl_gmlxo where user_id='admin' and user_pwd='1234';
+DELETE FROM user_tbl_gmlxo WHERE user_type = '1';
 commit;
+
+insert into enterprise_tbl_gmlxo VALUES ('지야조명', '전기', sysdate, '양만모', '
