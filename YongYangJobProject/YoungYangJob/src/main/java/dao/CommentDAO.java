@@ -8,4 +8,7 @@ public class CommentDAO {
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
+	String sql;
+	int n;
+
 }

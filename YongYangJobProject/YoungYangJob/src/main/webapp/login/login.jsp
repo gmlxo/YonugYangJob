@@ -6,14 +6,14 @@
 <div class="wrapper">
 	<div class="login-box">
         <h1>Sign in</h1>
-        <form action="#" method="post">
+        <form action="/login" method="post">
             <div class="login-box-input">
                 <input type="text" name="id"  required>
                 <label> ID</label>
             </div>
             
             <div class="login-box-input">
-                <input type="password" name="password" required>
+                <input type="password" name="pwd" required>
                 <label> Password</label>
             </div>
             <div class="login-label">
