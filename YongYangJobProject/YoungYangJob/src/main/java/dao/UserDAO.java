@@ -50,9 +50,9 @@ public class UserDAO {
 	
 //	로그인한 아이디와 비번의 계정이 존재한가?
 //	존재한다면 loginID의 담는다.	 
-	public String login(String id, String pwd) {
-		String log = null;
-		sql = "select user_id from user_tbl_gmlxo where user_id=? and user_pwd=?";
+	public String[] login(String id, String pwd) {
+		String[] log = new String[2];
+		sql = "select user_id, user_type from user_tbl_gmlxo where user_id=? and user_pwd=?";
 		
 		try {
 			conn = JdbcUtil.getConnection();
@@ -62,7 +62,8 @@ public class UserDAO {
 			rs = pstmt.executeQuery();
 			
 			while (rs.next()) {
-				log = rs.getString("user_id");
+				log[0] = rs.getString("user_id");
+				log[1] = rs.getString("user_type");
 			}
 		} catch (SQLException e) {
 			// TODO: handle exception

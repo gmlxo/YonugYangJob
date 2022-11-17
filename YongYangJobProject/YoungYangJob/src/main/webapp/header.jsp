@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String id, type, a_url;
+	id = (String) session.getAttribute("logOK");
+	type = (String) session.getAttribute("type");	
+	a_url = "#";
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,14 +40,30 @@
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg></a></li>
             </ul>
-
             <div class="col-md-3 text-end">
+<%
+	if(id ==  null) {
+%>
                 <!-- 로그인 버튼 -->
                 <button type="button" class="btn btn-outline-primary me-2"
                     onclick="location.href='/login/login.jsp'">Sign in</button>
                 <!-- 회원가입 버튼 -->
                 <button type="button" class="btn btn-primary" onclick="location.href='/login/signUP.jsp'">
                     Sign up</button>
-            </div>
+<%
+	} else {
+		if(type.equals("2")) {
+			a_url = "기업_";
+		} else if(type.equals("3")){
+			a_url = "all";
+		} else {
+			a_url = "지원자_";
+		}
+%>
+			<a href="<%=a_url%>"><%= id %></a>	
+<% 
+	}
+%>
+			</div>
         </header>
     </div>

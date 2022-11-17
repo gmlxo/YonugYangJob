@@ -45,3 +45,13 @@ dt{
     float: left;
     margin-right: 10px;
 }
+.sup{
+    border: 1px solid #000;
+    width: 930px;
+    margin: auto;
+}
+table{
+    margin: auto;
+    font-size: 17px;
+    border-spacing: 20px 6px;
+}

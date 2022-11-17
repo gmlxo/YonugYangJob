@@ -33,7 +33,7 @@ public class login extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		UserDAO dao = new UserDAO();
-		String id, pwd, log;
+		String id, pwd;
 
 //		세션생성
 		HttpSession session = request.getSession();
@@ -41,10 +41,11 @@ public class login extends HttpServlet {
 		id = request.getParameter("id");
 		pwd = request.getParameter("pwd");
 
-		log = dao.login(id, pwd);
+		String[] log = dao.login(id, pwd);
 
 		if (log != null) {
-			session.setAttribute("logOK", log);
+			session.setAttribute("logOK", log[0]);
+			session.setAttribute("type", log[1]);
 			response.sendRedirect("/index.jsp");
 		} else {
 			out.println("<script> alert(\"로그인에 실패하였습니다.\"); history.go(-1); </script>");

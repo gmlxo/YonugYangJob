@@ -1,45 +1,66 @@
+a {
+	text-decoration: none;
+	color: #000;
+}
 
-a{
-    text-decoration: none;
-    color: #000;
+a:hover {
+	text-decoration: underline;
 }
-a:hover{
-    text-decoration: underline;
-}
+
 .wrapper {
-    margin: auto;
-    width: 930px;
-    border-radius: 5px;
-}
-.uploadAnn{
-    /* margin: auto; */
-    margin-top: 10px;
-    width: 920px;
-}
-.head{
-    border-bottom: 1px solid #888;
-    display: flex;
-    justify-content: space-between;
-}
-.company_name{
-    font-size: 13px;
-    color: #777;
-}
-.title_ann_upload{
-    font-size: 20px;
-}
-dl{
-    width: 395px;
-}
-dt{
-    float: left;
-    margin-right: 5px;
+	margin: auto;
+	width: 930px;
+	border-radius: 5px;
 }
 
-.wrapper_{
-    width: 930px;
-    margin: auto;
+.uploadAnn {
+	/* margin: auto; */
+	margin-top: 10px;
+	width: 920px;
 }
+
+.head {
+	border-bottom: 1px solid #888;
+	display: flex;
+	justify-content: space-between;
+}
+
+.company_name {
+	font-size: 13px;
+	color: #777;
+}
+
+.title_ann_upload {
+	font-size: 20px;
+}
+
+dl {
+	width: 395px;
+}
+
+dt {
+	float: left;
+	margin-right: 5px;
+}
+
+.wrapper_ {
+	width: 930px;
+	margin: auto;
+}
+
 input {
-    width: 200px;
+	width: 200px;
+}
+
+.sup {
+	width: 930px;
+	margin: auto;
+}
+
+.table2 {
+	/* margin: auto; */
+	margin-left: -30px;
+	font-size: 17px;
+	border-collapse: separate;
+	border-spacing: 30px 3px;
 }
