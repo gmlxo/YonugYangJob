@@ -1,35 +1,13 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 public class SupportDAO {
-	private String title;
-	private String sup_applicant;
-	private String sup_file;
-	
-	public SupportDAO() {
-		super();
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getSup_applicant() {
-		return sup_applicant;
-	}
-
-	public void setSup_applicant(String sup_applicant) {
-		this.sup_applicant = sup_applicant;
-	}
-
-	public String getSup_file() {
-		return sup_file;
-	}
-
-	public void setSup_file(String sup_file) {
-		this.sup_file = sup_file;
-	}
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	String sql;
+	int n;
 }

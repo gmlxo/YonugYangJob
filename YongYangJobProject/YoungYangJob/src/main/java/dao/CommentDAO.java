@@ -1,44 +1,12 @@
 package dao;
 
-public class CommentDAO {
-	private String com_idx;
-	private String ity_idx;
-	private String userid;
-	private String com_contents;
-	
-	public CommentDAO() {
-		super();
-	}
-
-	public String getCom_idx() {
-		return com_idx;
-	}
-
-	public void setCom_idx(String com_idx) {
-		this.com_idx = com_idx;
-	}
-
-	public String getIty_idx() {
-		return ity_idx;
-	}
-
 	public void setIty_idx(String ity_idx) {
-		this.ity_idx = ity_idx;
-	}
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
-	public String getUserid() {
-		return userid;
-	}
-
-	public void setUserid(String userid) {
-		this.userid = userid;
-	}
-
-	public String getCom_contents() {
-		return com_contents;
-	}
-
-	public void setCom_contents(String com_contents) {
-		this.com_contents = com_contents;
-	}
+public class CommentDAO {
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
 }
