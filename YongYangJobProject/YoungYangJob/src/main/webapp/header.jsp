@@ -60,7 +60,8 @@
 			a_url = "지원자_";
 		}
 %>
-			<a href="<%=a_url%>"><%= id %></a>	
+			| &nbsp; <a href="<%=a_url%>"><%= id %></a> &nbsp; | &nbsp; 
+			<a href="/signOut">로그아웃</a> &nbsp; |	
 <% 
 	}
 %>
