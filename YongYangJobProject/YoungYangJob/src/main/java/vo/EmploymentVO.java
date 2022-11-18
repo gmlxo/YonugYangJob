@@ -2,15 +2,15 @@ package vo;
 
 public class EmploymentVO {
 	private String emp_title;
-	private String officials;
-	private String officials_mail;
+	private String emp_name;
+	private String emp_email;
 	private String company_name;
-	private String emp_contents;
 	private String emp_url;
-	private String emp_sectors;
-	private String emp_career;
-	private String emp_Education;
-	private String emp_workType;
+	private String career;
+	private String education;
+	private String work_type;
+	private String emp_day;
+	private String emp_contents;
 	
 	public EmploymentVO() {
 		super();
@@ -24,20 +24,20 @@ public class EmploymentVO {
 		this.emp_title = emp_title;
 	}
 
-	public String getOfficials() {
-		return officials;
+	public String getEmp_name() {
+		return emp_name;
 	}
 
-	public void setOfficials(String officials) {
-		this.officials = officials;
+	public void setEmp_name(String emp_name) {
+		this.emp_name = emp_name;
 	}
 
-	public String getOfficials_mail() {
-		return officials_mail;
+	public String getEmp_email() {
+		return emp_email;
 	}
 
-	public void setOfficials_mail(String officials_mail) {
-		this.officials_mail = officials_mail;
+	public void setEmp_email(String emp_email) {
+		this.emp_email = emp_email;
 	}
 
 	public String getCompany_name() {
@@ -48,14 +48,6 @@ public class EmploymentVO {
 		this.company_name = company_name;
 	}
 
-	public String getEmp_contents() {
-		return emp_contents;
-	}
-
-	public void setEmp_contents(String emp_contents) {
-		this.emp_contents = emp_contents;
-	}
-
 	public String getEmp_url() {
 		return emp_url;
 	}
@@ -64,35 +56,44 @@ public class EmploymentVO {
 		this.emp_url = emp_url;
 	}
 
-	public String getEmp_sectors() {
-		return emp_sectors;
+	public String getCareer() {
+		return career;
 	}
 
-	public void setEmp_sectors(String emp_sectors) {
-		this.emp_sectors = emp_sectors;
+	public void setCareer(String career) {
+		this.career = career;
 	}
 
-	public String getEmp_career() {
-		return emp_career;
+	public String getEducation() {
+		return education;
 	}
 
-	public void setEmp_career(String emp_career) {
-		this.emp_career = emp_career;
+	public void setEducation(String education) {
+		this.education = education;
 	}
 
-	public String getEmp_Education() {
-		return emp_Education;
+	public String getWork_type() {
+		return work_type;
 	}
 
-	public void setEmp_Education(String emp_Education) {
-		this.emp_Education = emp_Education;
+	public void setWork_type(String work_type) {
+		this.work_type = work_type;
 	}
 
-	public String getEmp_workType() {
-		return emp_workType;
+	public String getEmp_day() {
+		return emp_day;
 	}
 
-	public void setEmp_workType(String emp_workType) {
-		this.emp_workType = emp_workType;
+	public void setEmp_day(String emp_day) {
+		this.emp_day = emp_day;
 	}
+
+	public String getEmp_contents() {
+		return emp_contents;
+	}
+
+	public void setEmp_contents(String emp_contents) {
+		this.emp_contents = emp_contents;
+	}
+	
 }

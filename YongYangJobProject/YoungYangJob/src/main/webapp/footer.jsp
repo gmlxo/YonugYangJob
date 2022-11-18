@@ -48,5 +48,6 @@
     </div>
 
     <script src="/js/menu_script.js"></script>
+    <script src="/js/jquery.js"></script>
 </body>
 </html>

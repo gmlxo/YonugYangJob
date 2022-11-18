@@ -9,26 +9,26 @@
             <table>
                 <tr>
                     <td><b>이름</b></td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="name" id=""></td>
                     <td><b>이메일</b></td>
-                    <td><input type="email" name="" id=""></td>
+                    <td><input type="email" name="mail" id=""></td>
                 </tr>
                 <tr>
                     <td><b>기업명</b></td>
-                    <td colspan="3"><input type="text" name="" id="col3"></td>
+                    <td colspan="3"><input type="text" name="company_name" id="col3"></td>
                 </tr>
                 <tr>
                     <td><b>채용 홈페이지</b></td>
-                    <td colspan="3"><input type="url" name="" id="col3"></td>
+                    <td colspan="3"><input type="url" name="url" id="col3"></td>
                 </tr>
                 <tr>
                     <td><b>제목</b></td>
-                    <td colspan="3"><input type="text" name="" id="col3"></td>
+                    <td colspan="3"><input type="text" name="title" id="col3"></td>
                 </tr>
                 <tr>
                     <td><b>경력</b></td>
                     <td>
-                        <select>
+                        <select name="career">
                             <option value="1">무관</option>
                             <option value="2">~ 2년</option>
                             <option value="5">~ 5년</option>
@@ -38,7 +38,7 @@
                     </td>
                     <td><b>학력</b></td>
                     <td>
-                        <select>
+                        <select name="education">
                             <option value="1">고졸</option>
                             <option value="2">대졸_2년제</option>
                             <option value="4">대졸_4년제</option>
@@ -48,16 +48,18 @@
                 </tr>
                 <tr>
                     <td><b>근무형태</b></td>
-                    <td colspan="3">
-                        <select id="col3">
+                    <td>
+                        <select name="work_type">
                             <option value="1">계약직</option>
                             <option value="2">정규직</option>
                         </select>
                     </td>
+                    <td><b>모집일</b></td>
+                    <td><input type="date" name="day" id="sysdate"></td>
                 </tr>
                 <tr>
                     <td><b>내용</b></td>
-                    <td colspan="3"><textarea name="" id="text" cols="30" rows="10"></textarea></td>
+                    <td colspan="3"><textarea name="contents" id="text" cols="30" rows="10"></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit"></td>

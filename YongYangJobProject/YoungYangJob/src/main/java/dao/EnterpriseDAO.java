@@ -49,7 +49,8 @@ public class EnterpriseDAO {
 
 	public int insertEnt(String ent_name, String representative, String establishment_date,String sectors, String url, String address, String explanation) {
 		int n = 0;
-		sql = "insert into enterprise_tbl_gmlxo VALUES (?, ?, ?, ?, ?, ?, ?)";
+		String img = "https://www.viewhotels.jp/asakusa-annex/wp-content/uploads/sites/6/2020/03/test-img.jpg";
+		sql = "insert into enterprise_tbl_gmlxo VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		try {
 			conn = JdbcUtil.getConnection();
@@ -61,6 +62,7 @@ public class EnterpriseDAO {
 			pstmt.setString(5, url);
 			pstmt.setString(6, address);
 			pstmt.setString(7, explanation);
+			pstmt.setString(8, img);
 			
 			n = pstmt.executeUpdate();
 		} catch (SQLException e) {

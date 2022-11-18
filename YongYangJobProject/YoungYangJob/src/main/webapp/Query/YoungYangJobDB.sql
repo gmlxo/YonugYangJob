@@ -29,7 +29,7 @@ CREATE TABLE support_tbl_gmlxo (
 );
 
 CREATE TABLE employment_tbl_gmlxo (
-    emp_title varchar2(255) CONSTRAINT ent_gmlxo_name_pk primary key,
+    emp_title varchar2(255) CONSTRAINT emp_gmlxo_title_pk primary key,
     emp_name varchar2(255) CONSTRAINT emp_user_gmlxo_name_fk REFERENCES user_tbl_gmlxo(user_id), -- 올리는 사람 이름
     emp_email varchar2(255) CONSTRAINT emp_user_gmlxo_email_fk REFERENCES user_tbl_gmlxo(user_email), -- 연락처
     company_name varchar2(255) CONSTRAINT emp_ent_entName_email_fk REFERENCES enterprise_tbl_gmlxo(ent_name), -- 기업 명
@@ -37,8 +37,11 @@ CREATE TABLE employment_tbl_gmlxo (
     career char(1), -- 경력
     education char(1), -- 학력
     work_type char(1), -- 근무형태
-    emp_day date -- 언제까지 모집하는지
+    emp_day date, -- 언제까지 모집하는지
+    emp_contents varchar2(4000)
 );
+
+DROP TABLE employment_tbl_gmlxo;
 
 CREATE TABLE community_tbl_gmlxo (
     ity_idx int CONSTRAINT ity_gmlxo_idx_pk primary key,
