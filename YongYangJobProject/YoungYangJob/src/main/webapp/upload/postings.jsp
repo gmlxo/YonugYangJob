@@ -52,7 +52,6 @@
                         <select id="col3">
                             <option value="1">계약직</option>
                             <option value="2">정규직</option>
-                            <option value="3">둘 다</option>
                         </select>
                     </td>
                 </tr>

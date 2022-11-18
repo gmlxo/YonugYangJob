@@ -11,6 +11,9 @@ td {
     background-color: rgb(241, 241, 241);
 }
 
+textarea {
+    resize: none;
+}
 label {
     font-size: 20px;
 }

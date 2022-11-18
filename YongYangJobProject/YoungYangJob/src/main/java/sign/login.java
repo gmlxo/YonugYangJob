@@ -12,9 +12,6 @@ import javax.servlet.http.HttpSession;
 
 import dao.UserDAO;
 
-/**
- * Servlet implementation class login
- */
 @WebServlet("/login")
 public class login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
