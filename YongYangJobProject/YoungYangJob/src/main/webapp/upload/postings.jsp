@@ -5,7 +5,11 @@
 <link rel="stylesheet" href="/css/postings_style.css">
 
 	<div class="wrapper">
+<% if(id != null) { %>
         <form action="/jobPosting" method="post">
+<% } else { %>
+	<form action="/login/login.jsp">
+<% } %>
             <table>
                 <tr>
                     <td><b>이름</b></td>

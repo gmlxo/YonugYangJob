@@ -6,8 +6,12 @@
 
 	<div class="wrapper_">
         <div class="uploadEnt">
-            <form action="/addEnt" method="get">
-            	<table>
+<% if(id != null) { %>
+        	<form action="/addEnt" method="get">
+<% } else { %>
+			<form action="/login/login.jsp">
+<% } %>
+               <table>
                 <tr>
                     <td>기업명</td>
                     <td><input type="text" name="ent_name"></td>
@@ -41,7 +45,7 @@
                 	<td><input type="submit" value="추가하기" id="sub"></td>
                 </tr>
             </table>
-            </form>
+           </form>
         </div>
     </div>
 
