@@ -5,13 +5,13 @@
 <link rel="stylesheet" href="/css/postings_style.css">
 
 	<div class="wrapper">
-        <form action="#" method="post">
+        <form action="/jobPosting" method="post">
             <table>
                 <tr>
                     <td><b>이름</b></td>
-                    <td><input type="text" name="name" id=""></td>
+                    <td><input type="text" name="emp_name" id=""></td>
                     <td><b>이메일</b></td>
-                    <td><input type="email" name="mail" id=""></td>
+                    <td><input type="email" name="emp_email" id=""></td>
                 </tr>
                 <tr>
                     <td><b>기업명</b></td>
@@ -19,11 +19,11 @@
                 </tr>
                 <tr>
                     <td><b>채용 홈페이지</b></td>
-                    <td colspan="3"><input type="url" name="url" id="col3"></td>
+                    <td colspan="3"><input type="url" name="emp_url" id="col3"></td>
                 </tr>
                 <tr>
                     <td><b>제목</b></td>
-                    <td colspan="3"><input type="text" name="title" id="col3"></td>
+                    <td colspan="3"><input type="text" name="emp_title" id="col3"></td>
                 </tr>
                 <tr>
                     <td><b>경력</b></td>
@@ -55,11 +55,11 @@
                         </select>
                     </td>
                     <td><b>모집일</b></td>
-                    <td><input type="date" name="day" id="sysdate"></td>
+                    <td><input type="date" name="emp_day" id="sysdate"></td>
                 </tr>
                 <tr>
                     <td><b>내용</b></td>
-                    <td colspan="3"><textarea name="contents" id="text" cols="30" rows="10"></textarea></td>
+                    <td colspan="3"><textarea name="emp_contents" id="text" cols="30" rows="10"></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit"></td>
