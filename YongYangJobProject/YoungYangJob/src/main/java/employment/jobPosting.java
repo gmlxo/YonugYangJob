@@ -44,9 +44,10 @@ public class jobPosting extends HttpServlet {
 		int n = dao.insertEmp(emp_title, emp_name, emp_email, company_name, emp_url, career, education, work_type,
 				emp_day, emp_contents);
 		
-		if(n>0) 
-			out.println("<script> alert(\"추가되였습니다.\"); history.go(-2); </script>");
-		else
+		if(n>0) {
+			out.println("<script> alert(\"추가되였습니다.\");</script>");
+			response.sendRedirect("/index.jsp");
+		}else
 			out.println("<script> alert(\"추가에 실패하였습니다.\"); history.go(-1); </script>");
 	}
 

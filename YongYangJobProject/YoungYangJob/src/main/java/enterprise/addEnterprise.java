@@ -40,9 +40,10 @@ public class addEnterprise extends HttpServlet {
 
 		int n = dao.insertEnt(ent_name, representative, establishment_date, sectors, url, address, explanation);
 		
-		if(n>0) 
-			out.println("<script> alert(\"추가되였습니다.\"); history.go(-2); </script>");
-		else
+		if(n>0) {
+			out.println("<script> alert(\"추가되였습니다.\"); </script>");
+			response.sendRedirect("/index.jsp");
+		} else
 			out.println("<script> alert(\"추가에 실패하였습니다.\"); history.go(-1); </script>");
 	}
 }

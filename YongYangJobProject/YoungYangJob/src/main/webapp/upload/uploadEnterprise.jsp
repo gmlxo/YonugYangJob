@@ -22,7 +22,7 @@
                 </tr>
                 <tr>
                     <td>홈페이지</td>
-                    <td><input type="url" name="url"></td>
+                    <td><input type="url" name="url" placeholder="ex) https://www.page.com"></td>
                 </tr>
                 <tr>
                     <td>설립일</td>

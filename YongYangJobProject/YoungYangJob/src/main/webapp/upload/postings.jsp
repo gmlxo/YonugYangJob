@@ -9,7 +9,7 @@
             <table>
                 <tr>
                     <td><b>이름</b></td>
-                    <td><input type="text" name="emp_name" id=""></td>
+                    <td><input type="text" name="emp_name" value="<%=id%>" readonly></td>
                     <td><b>이메일</b></td>
                     <td><input type="email" name="emp_email" id=""></td>
                 </tr>
@@ -19,7 +19,7 @@
                 </tr>
                 <tr>
                     <td><b>채용 홈페이지</b></td>
-                    <td colspan="3"><input type="url" name="emp_url" id="col3"></td>
+                    <td colspan="3"><input type="url" name="emp_url" id="col3" placeholder="ex) https://www.page.com"></td>
                 </tr>
                 <tr>
                     <td><b>제목</b></td>
