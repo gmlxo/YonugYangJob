@@ -3,7 +3,8 @@ package vo;
 public class CommentVO {
 	private String com_idx;
 	private String ity_idx;
-	private String userid;
+	private String user_id;
+	private String com_day;
 	private String com_contents;
 	
 	public CommentVO() {
@@ -26,12 +27,20 @@ public class CommentVO {
 		this.ity_idx = ity_idx;
 	}
 
-	public String getUserid() {
-		return userid;
+	public String getUser_id() {
+		return user_id;
 	}
 
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
+	}
+
+	public String getCom_day() {
+		return com_day;
+	}
+
+	public void setCom_day(String com_day) {
+		this.com_day = com_day;
 	}
 
 	public String getCom_contents() {

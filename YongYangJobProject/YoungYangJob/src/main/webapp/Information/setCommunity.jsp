@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/css/community_style.css">
 
 	<div class="wrapper">
+	<a href="/upload/community.jsp">게시물 올리기</a><br>
         <div class="contentsNity">
             <h3>title</h3>
             <div class="content">contentssssssssssssssss</div>

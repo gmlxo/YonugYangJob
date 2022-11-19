@@ -52,23 +52,27 @@ input {
 	margin-left: 5px;
 	width: 200px;
 }
-textarea{
+
+textarea {
 	resize: none;
 	margin-left: 5px;
 	width: 200px;
 	height: 60px;
 }
-#sub{
+
+#sub {
 	border: none;
 	background-color: rgb(78, 78, 78);
 	color: #fff;
 	margin-top: 10px;
-    /* margin: auto; */
-    width: 150px;
+	/* margin: auto; */
+	width: 150px;
 }
-#sub:hover{
+
+#sub:hover {
 	background-color: #000;
 }
+
 .sup {
 	width: 930px;
 	margin: auto;
@@ -80,4 +84,23 @@ textarea{
 	font-size: 17px;
 	border-collapse: separate;
 	border-spacing: 30px 3px;
+}
+
+.uploadCom{
+	 margin: auto;
+    width: 930px;
+    border-radius: 5px;
+}
+.tabCom {
+	margin-top : 10px;
+	margin-left: -30px;
+	font-size: 17px;
+	border-collapse: separate;
+	border-spacing: 30px 8px;
+}
+
+#comText {
+	resize: none;
+	width: 550px;
+	height: 170px;
 }

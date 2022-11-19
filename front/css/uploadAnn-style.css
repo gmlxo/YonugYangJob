@@ -50,8 +50,19 @@ dt{
     width: 930px;
     margin: auto;
 }
-table{
-    margin: auto;
+table, .tab{
     font-size: 17px;
     border-spacing: 20px 6px;
+}
+table{
+    margin: auto;
+}
+
+h2{
+    margin-left: 20px;
+}
+
+textarea{
+    resize: none;
+    width: 410px;
 }

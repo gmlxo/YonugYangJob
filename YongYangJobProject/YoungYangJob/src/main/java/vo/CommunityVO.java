@@ -2,8 +2,9 @@ package vo;
 
 public class CommunityVO {
 	private String ity_idx;
-	private String userid;
+	private String user_id;
 	private String ity_title;
+	private String ity_day;
 	private String ity_contents;
 	
 	public CommunityVO() {
@@ -18,12 +19,12 @@ public class CommunityVO {
 		this.ity_idx = ity_idx;
 	}
 
-	public String getUserid() {
-		return userid;
+	public String getUser_id() {
+		return user_id;
 	}
 
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
 	public String getIty_title() {
@@ -32,6 +33,14 @@ public class CommunityVO {
 
 	public void setIty_title(String ity_title) {
 		this.ity_title = ity_title;
+	}
+
+	public String getIty_day() {
+		return ity_day;
+	}
+
+	public void setIty_day(String ity_day) {
+		this.ity_day = ity_day;
 	}
 
 	public String getIty_contents() {
