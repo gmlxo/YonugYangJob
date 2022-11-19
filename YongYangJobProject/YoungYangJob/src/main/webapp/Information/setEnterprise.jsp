@@ -45,18 +45,18 @@
             <div class="br"></div>
         </div>
     </div>
-<%
-		}
-	}
-%>
     <div class="entComent">
-        <form action="#">
+        <form action="/com">
         	<input type="hidden" name="id" value="<%=id%>">
-        	<textarea name="" id="" cols="30" rows="10"></textarea>
+        	<input type="hidden" name="ity" value="<%=ity.getIty_idx()%>">
+        	<textarea name="contents" cols="30" rows="10"></textarea>
         	<input type="submit" value="댓글달기">
         </form>
     </div>
 <%
+		}
+	}
+
 	if(comList != null){
 		for(CommentVO com : comList){
 %>
