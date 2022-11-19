@@ -1,8 +1,8 @@
 package vo;
 
 public class CommentVO {
-	private String com_idx;
-	private String ity_idx;
+	private int com_idx;
+	private int ity_idx;
 	private String user_id;
 	private String com_day;
 	private String com_contents;
@@ -11,19 +11,19 @@ public class CommentVO {
 		super();
 	}
 
-	public String getCom_idx() {
+	public int getCom_idx() {
 		return com_idx;
 	}
 
-	public void setCom_idx(String com_idx) {
+	public void setCom_idx(int com_idx) {
 		this.com_idx = com_idx;
 	}
 
-	public String getIty_idx() {
+	public int getIty_idx() {
 		return ity_idx;
 	}
 
-	public void setIty_idx(String ity_idx) {
+	public void setIty_idx(int ity_idx) {
 		this.ity_idx = ity_idx;
 	}
 

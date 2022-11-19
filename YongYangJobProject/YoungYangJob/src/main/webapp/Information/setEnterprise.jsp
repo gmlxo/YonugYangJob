@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/css/setEnt_style.css">
 
 	<div class="headerEnt">
-        <a href="/Information/setCommunity.jsp">
+        <a href="/ityList">
             < 전체 게시글 </a>
     </div>
     <br>
@@ -35,7 +35,8 @@
         </div>
     </div>
     <div class="entComent">
-        <form action="">
+        <form action="#">
+        	<input type="hidden" name="id" value="<%=id%>">
         	<textarea name="" id="" cols="30" rows="10"></textarea>
         	<input type="submit" value="댓글달기">
         </form>

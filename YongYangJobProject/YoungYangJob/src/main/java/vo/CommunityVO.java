@@ -1,7 +1,7 @@
 package vo;
 
 public class CommunityVO {
-	private String ity_idx;
+	private int ity_idx;
 	private String user_id;
 	private String ity_title;
 	private String ity_day;
@@ -11,11 +11,11 @@ public class CommunityVO {
 		super();
 	}
 
-	public String getIty_idx() {
+	public int getIty_idx() {
 		return ity_idx;
 	}
 
-	public void setIty_idx(String ity_idx) {
+	public void setIty_idx(int ity_idx) {
 		this.ity_idx = ity_idx;
 	}
 

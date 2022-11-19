@@ -14,12 +14,12 @@
 	if(ityList != null){
 		for(CommunityVO ity : ityList){
 %>
-        <div class="contentsNity" onclick="location.href='/setEnt?ity_idx=<%=ity.getIty_idx()%>';">
+        <div class="contentsNity" onclick="location.href='/comList?ity_idx=<%=ity.getIty_idx()%>';">
             <h3><%= ity.getIty_title() %></h3>
             <div class="content"><%= ity.getIty_contents() %></div>
             	<div class="etcCon">
                 	<div class="etc">
-                    	<%= ity.getUser_id() %> 님 &nbsp;
+                    	<%= ity.getUser_id() %> 님 &nbsp; <%= ity.getIty_day() %> 일 전
                 	</div>
             	</div>
             <div class="line"></div>
