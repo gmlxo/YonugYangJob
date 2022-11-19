@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/css/login_style.css">
 <div class="wrapper_up">
 	<div class="sign-box">
-        <h1>sign up</h1>
+        <h1>Sign up</h1>
         <form action="/signUp" method="post">
             <div class="login-box-input">
                 <input type="text" name="id" required>
