@@ -39,7 +39,7 @@ public class PostIty extends HttpServlet {
 		if(n>0) 
 			response.sendRedirect("/Information/setCommunity.jsp");
 		else
-			out.println("<script> alert(\"회원가입에 실패하였습니다.\"); history.go(-1); </script>");
+			out.println("<script> alert(\"게시물 업로드에 실패하였습니다.\"); history.go(-1); </script>");
 	}
 
 }

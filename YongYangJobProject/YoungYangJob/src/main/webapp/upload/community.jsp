@@ -19,10 +19,10 @@
                 	</tr>
                 	<tr>
                     	<td>내용</td>
-                    	<td colspan="3"><textarea name="contents" id="comText" cols="30" rows="10"></textarea></td>
+                    	<td colspan="3"><textarea name="contents" id="comText"></textarea></td>
                 	</tr>
             	</table>
-            	<div class="comBu"><input type="submit" value="게시하기"></div>
+            	<div class="comBu"><input type="submit" value="게시하기" id="comSub"></div>
             </form>
     </div>
 		

@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import dao.EmploymentDAO;
 
 @WebServlet("/jobPosting")
-public class JobPosting extends HttpServlet {
+public class jobPosting extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public JobPosting() {
+	public jobPosting() {
 		super();
 	}
 

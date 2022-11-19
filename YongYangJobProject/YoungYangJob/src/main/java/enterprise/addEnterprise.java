@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import dao.EnterpriseDAO;
 
 @WebServlet("/addEnt")
-public class AddEnterprise extends HttpServlet {
+public class addEnterprise extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	public AddEnterprise() {
+	public addEnterprise() {
         super();
         // TODO Auto-generated constructor stub
     }

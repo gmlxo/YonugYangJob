@@ -98,7 +98,21 @@ textarea {
 	border-collapse: separate;
 	border-spacing: 30px 8px;
 }
-
+.comBu{
+	margin: auto;
+	width: 550px;
+}
+#comSub{
+	margin: auto;
+	width: 300px;
+	height: 50px;
+	background-color: #555;
+	color: #fff;
+	border: none;;
+}
+#comSub:hover{
+	background-color: #000;
+}
 #comText {
 	resize: none;
 	width: 550px;

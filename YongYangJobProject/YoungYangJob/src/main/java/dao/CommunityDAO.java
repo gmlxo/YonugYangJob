@@ -16,7 +16,7 @@ public class CommunityDAO {
 	public int insetIty(String id, String title, String contents) {
 		int n = 0;
 
-		sql = "insert into communtiy_tbl_gmlxo values (ity_seq.NEXTVAL, ?, ?, sysdate, ?)";
+		sql = "insert into community_tbl_gmlxo values (ity_seq.NEXTVAL, ?, ?, sysdate, ?)";
 
 		try {
 			conn = JdbcUtil.getConnection();
