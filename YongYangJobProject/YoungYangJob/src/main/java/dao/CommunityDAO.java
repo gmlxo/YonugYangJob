@@ -47,7 +47,7 @@ public class CommunityDAO {
 		ArrayList<CommunityVO> ityList = new ArrayList<CommunityVO>();
 		CommunityVO vo = null;
 
-		sql = "SELECT ity_idx, user_id, ity_title, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity_day, 'YYYY-MM-DD')+1 ity_day, substr(ity_contents, 1, 10) FROM community_tbl_gmlxo";
+		sql = "SELECT ity_idx, user_id, ity_title, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity_day, 'YYYY-MM-DD')+1 ity_day, substr(ity_contents, 1, 10) ity_contents FROM community_tbl_gmlxo";
 
 		try {
 			conn = JdbcUtil.getConnection();
@@ -152,7 +152,7 @@ public class CommunityDAO {
 				
 				vo.setUser_id(rs.getString("user_id"));
 				vo.setCom_day(rs.getString("com_day"));
-				vo.setCom_contents(rs.getString("com_comtents"));
+				vo.setCom_contents(rs.getString("com_contents"));
 
 				comList.add(vo);
 			}

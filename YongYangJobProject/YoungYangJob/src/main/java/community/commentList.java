@@ -34,6 +34,6 @@ public class commentList extends HttpServlet {
 			request.setAttribute("comList", comList);
 			request.setAttribute("ity", setIty);
 		}
-		request.getRequestDispatcher("/Information/setCommunity.jsp").forward(request, response);
+		request.getRequestDispatcher("/Information/setEnterprise.jsp").forward(request, response);
 	}
 }
