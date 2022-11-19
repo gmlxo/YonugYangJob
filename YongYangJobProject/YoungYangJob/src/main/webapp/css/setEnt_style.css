@@ -59,7 +59,7 @@ a:hover {
 }
 
 textarea {
-	width: 404px;
+	width: 415px;
 	height: 70px;
 	resize: none;
 	border-radius: 5px 0 0 5px;
@@ -67,8 +67,8 @@ textarea {
 
 input[type=submit] {
 	float: right;
-	width: 90px;
-	height: 76px;
+	width: 85px;
+	height: 70px;
 	background-color: #777;
 	border: none;
 	color: #fff;

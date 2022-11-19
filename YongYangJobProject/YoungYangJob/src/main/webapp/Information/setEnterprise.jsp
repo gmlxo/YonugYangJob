@@ -35,8 +35,10 @@
         </div>
     </div>
     <div class="entComent">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="댓글달기">
+        <form action="">
+        	<textarea name="" id="" cols="30" rows="10"></textarea>
+        	<input type="submit" value="댓글달기">
+        </form>
     </div>
     <div class="setComent">
         <div class="setCom">

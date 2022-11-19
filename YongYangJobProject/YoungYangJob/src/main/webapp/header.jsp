@@ -32,7 +32,7 @@
                 <li><a href="/index.jsp" class="nav-link px-2 link-secondary">Home</a></li>
                 <li><a href="/Information/jobs.jsp" class="nav-link px-2 link-dark hov"> 채용정보 </a></li>
                 <li><a href="/Information/enterprise.jsp" class="nav-link px-2 link-dark hov"> 기업정보 </a></li>
-                <li><a href="/Information/setCommunity.jsp" class="nav-link link-dark hov"> 커뮤니티 </a></li>
+                <li><a href="/ityList" class="nav-link link-dark hov"> 커뮤니티 </a></li>
                 <li><a href="/pop up/search_popUP.jsp" id="search" class="nav-link px-2 link-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
@@ -52,15 +52,8 @@
                     Sign up</button>
 <%
 	} else {
-		if(type.equals("2")) {
-			a_url = "기업_";
-		} else if(type.equals("3")){
-			a_url = "all";
-		} else {
-			a_url = "지원자_";
-		}
 %>
-			| &nbsp; <a href="<%=a_url%>"><%= id %></a> &nbsp; | &nbsp; 
+			| &nbsp; <%= id %> &nbsp; | &nbsp; 
 			<a href="/signOut">로그아웃</a> &nbsp; |	
 <% 
 	}
