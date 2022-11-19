@@ -1,7 +1,14 @@
+<%@page import="vo.CommunityVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="vo.CommentVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
+<% 
+	ArrayList<CommunityVO> setIty = (ArrayList<CommunityVO>)request.getAttribute("ity");
+	ArrayList<CommentVO> comList = (ArrayList<CommentVO>)request.getAttribute("comList"); 
+%>
 <link rel="stylesheet" href="/css/setEnt_style.css">
 
 	<div class="headerEnt">
@@ -9,11 +16,15 @@
             < 전체 게시글 </a>
     </div>
     <br>
+<%
+	if(setIty != null){
+		for(CommunityVO ity : setIty){
+%>
     <div class="set">
         <div class="heEnt">
             <div class="tit-box">
                 <div class="tit">
-                    <h2>&nbsp;title</h2>
+                    <h2>&nbsp;<%= ity.getIty_title() %></h2>
                 </div>
                 <div class="declaration">
                     <a href="/popUp/declaration_popUP.jsp">신고</a>&nbsp;&nbsp;
@@ -23,17 +34,21 @@
                 <div class="profile">
                     &nbsp;<img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" alt="userPro">
                     <div class="profileText">
-                        <label class="userName">nickname</label><br>
-                        <label class="dayPro">n일 전</label>
+                        <label class="userName"><%= ity.getUser_id() %></label><br>
+                        <label class="dayPro"><%= ity.getIty_day() %>일 전</label>
                     </div>
                 </div>
             </div>
         </div>
         <div class="entContents">
-            <label>&nbsp;contentssssssss</label>
+            <label>&nbsp;<%= ity.getIty_contents() %></label>
             <div class="br"></div>
         </div>
     </div>
+<%
+		}
+	}
+%>
     <div class="entComent">
         <form action="#">
         	<input type="hidden" name="id" value="<%=id%>">
@@ -41,33 +56,26 @@
         	<input type="submit" value="댓글달기">
         </form>
     </div>
+<%
+	if(comList != null){
+		for(CommentVO com : comList){
+%>
     <div class="setComent">
         <div class="setCom">
             &nbsp;<img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" alt="userPro">
             <div class="comProfileText">
-                <label class="userName">nickname</label>
+                <label class="userName"><%= com.getUser_id() %></label>
             </div>
             <div class="setTitCom">
-                <div class="titCom"><label>titleeeee</label></div>
+                <div class="titCom"><label><%= com.getCom_contents() %></label></div>
                 <div class="dayCom">
-                    <label>n일 전</label>
+                    <label><%= com.getCom_day() %> 일 전</label>
                 </div>
             </div>
         </div>
     </div>
-    <div class="setComent">
-        <div class="setCom">
-            &nbsp;<img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" alt="userPro">
-            <div class="comProfileText">
-                <label class="userName">nickname</label>
-            </div>
-            <div class="setTitCom">
-                <div class="titCom"><label>titleeeee</label></div>
-                <div class="dayCom">
-                    <label>n일 전</label>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<%
+		}
+	}
+%>
 <%@ include file="/footer.jsp" %>

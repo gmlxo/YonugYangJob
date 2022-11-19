@@ -74,6 +74,39 @@ public class CommunityDAO {
 		return ityList;
 	}
 
+//	게시물 내용 자세히? 보기 
+//	idx 값의 맞는 게시물 받아오기
+	public ArrayList<CommunityVO> setIty(int ity_idx) {
+		ArrayList<CommunityVO> ityList = new ArrayList<CommunityVO>();
+		CommunityVO vo = null;
+
+		sql = "SELECT ity_idx, user_id, ity_title, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity_day, 'YYYY-MM-DD')+1 ity_day, ity_contents FROM community_tbl_gmlxo where ity_idx=?";
+
+		try {
+			conn = JdbcUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, ity_idx);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				vo = new CommunityVO();
+
+				vo.setIty_idx(rs.getInt("ity_idx"));
+				vo.setUser_id(rs.getString("user_id"));
+				vo.setIty_title(rs.getString("ity_title"));
+				vo.setIty_day(rs.getString("ity_day"));
+				vo.setIty_contents(rs.getString("ity_contents"));
+
+				ityList.add(vo);
+			}
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt, rs);
+		}
+		return ityList;
+	}
 	
 	/* comment */
 //	댓글 달기
