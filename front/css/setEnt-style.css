@@ -51,29 +51,40 @@ a:hover {
 .entContents {
     /* border: 1px solid red; */
     margin-top: 10px;
-    height: 300px;
+}
+.br{
+    height: 10px;
 }
 
 .entComent {
     margin-top: 25px;
-    border: 1.5px solid rgb(240, 240, 240);
     height: 76px;
 }
 
 textarea {
-    width: 400px;
+    width: 404px;
     height: 70px;
     resize: none;
+    border-radius: 5px 0 0 5px;
 }
 
 input[type=submit] {
-    width: 87.6px;
-    height: 70px;
+    float: right;
+    width: 90px;
+    height: 76px;
+    background-color: #777;
+    border: none;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+.entComent:hover input[type=submit]{
+    background-color: #000;
 }
 
 .setCom {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .comProfileText{

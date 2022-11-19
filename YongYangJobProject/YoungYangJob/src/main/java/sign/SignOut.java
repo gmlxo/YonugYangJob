@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet("/signOut")
-public class signOut extends HttpServlet {
+public class SignOut extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public signOut() {
+    public SignOut() {
         super();
     }
 

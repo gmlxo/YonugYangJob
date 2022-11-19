@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/css/setEnt_style.css">
 
 	<div class="headerEnt">
-        <a href="/Information/community.html">
+        <a href="/Information/setCommunity.jsp">
             < 전체 게시글 </a>
     </div>
     <br>
@@ -16,7 +16,7 @@
                     <h2>&nbsp;title</h2>
                 </div>
                 <div class="declaration">
-                    <a href="/pop up/declaration-pop_up.html">신고</a>&nbsp;&nbsp;
+                    <a href="/popUp/declaration_popUP.jsp">신고</a>&nbsp;&nbsp;
                 </div>
             </div>
             <div class="pro-box">
@@ -31,7 +31,12 @@
         </div>
         <div class="entContents">
             <label>&nbsp;contentssssssss</label>
+            <div class="br"></div>
         </div>
+    </div>
+    <div class="entComent">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="댓글달기">
     </div>
     <div class="setComent">
         <div class="setCom">

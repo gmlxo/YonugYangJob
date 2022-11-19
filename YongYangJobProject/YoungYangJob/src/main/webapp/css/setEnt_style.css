@@ -1,106 +1,119 @@
 * {
-    color: #000;
-    text-decoration: none;
+	color: #000;
+	text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
-.set,
-.headerEnt,
-.entComent,
-.setComent {
-    border-radius: 5px;
-    width: 500px;
-    margin: auto;
+.set, .headerEnt, .entComent, .setComent {
+	border-radius: 5px;
+	width: 500px;
+	margin: auto;
 }
 
 .set {
-    border: 1.5px solid rgb(240, 240, 240);
+	border: 1.5px solid rgb(240, 240, 240);
 }
 
 .declaration {
-    margin-top: 23px;
+	margin-top: 23px;
 }
 
-.tit-box,
-.pro-box {
-    display: flex;
-    justify-content: space-between;
+.tit-box, .pro-box {
+	display: flex;
+	justify-content: space-between;
 }
 
 .profile>img {
-    border: .7px solid #000;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+	border: .7px solid #000;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }
 
 .profileText {
-    font-size: 13px;
-    margin-left: 70px;
-    margin-top: -35px;
+	font-size: 13px;
+	margin-left: 70px;
+	margin-top: -35px;
 }
 
 .comment>a {
-    font-size: 30px;
-    margin-top: 10px;
+	font-size: 30px;
+	margin-top: 10px;
 }
 
 .entContents {
-    /* border: 1px solid red; */
-    margin-top: 10px;
-    height: 300px;
+	/* border: 1px solid red; */
+	margin-top: 10px;
+}
+
+.br {
+	height: 10px;
 }
 
 .entComent {
-    margin-top: 25px;
-    border: 1.5px solid rgb(240, 240, 240);
-    height: 76px;
+	margin-top: 25px;
+	height: 76px;
 }
 
 textarea {
-    width: 400px;
-    height: 70px;
-    resize: none;
+	width: 404px;
+	height: 70px;
+	resize: none;
+	border-radius: 5px 0 0 5px;
 }
 
 input[type=submit] {
-    width: 87.6px;
-    height: 70px;
+	float: right;
+	width: 90px;
+	height: 76px;
+	background-color: #777;
+	border: none;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+}
+
+.entComent:hover input[type=submit] {
+	background-color: #000;
 }
 
 .setCom {
-    display: flex;
-    margin-top: 20px;
+	display: flex;
+	margin-top: 30px;
 }
 
-.comProfileText{
-    margin-top: 5px;
-    margin-left: 10px;
-}
-.setTitCom {
-    width: 800px;
-    margin-top: 5px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-}
 .comProfileText {
-    font-size: 13px;
+	margin-top: 5px;
+	margin-left: 10px;
 }
+
+.setTitCom {
+	width: 800px;
+	margin-top: 5px;
+	margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.comProfileText {
+	font-size: 13px;
+}
+
 .dayCom {
-    font-size: 13px;
-    color: #888;
+	font-size: 13px;
+	color: #888;
 }
+
 .setCom>img {
-    height: 25px;
-    width: 25px;
-    border: .7px solid #000;
-    border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	border: .7px solid #000;
+	border-radius: 50%;
 }
+
 .setComent {
-    height: 35px;
-    border-bottom: 1px solid rgb(240, 240, 240);
+	height: 35px;
+	border-bottom: 1px solid rgb(240, 240, 240);
 }

@@ -15,12 +15,14 @@
 }
 
 img {
+	margin-top: 5px;
     width: 30px;
 }
 
 .h2-box {
     margin-left: 50px;
     margin: auto;
+    margin-top: 10px;
     width: 400px;
     border-bottom: 1px solid #888;
 }

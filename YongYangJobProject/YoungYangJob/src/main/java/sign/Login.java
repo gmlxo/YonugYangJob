@@ -13,10 +13,10 @@ import javax.servlet.http.HttpSession;
 import dao.UserDAO;
 
 @WebServlet("/login")
-public class login extends HttpServlet {
+public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public login() {
+    public Login() {
         super();
         // TODO Auto-generated constructor stub
     }
