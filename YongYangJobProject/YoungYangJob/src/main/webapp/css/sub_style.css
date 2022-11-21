@@ -52,8 +52,8 @@ a:hover {
     border: 1px solid #000;
 }
 
-.search-box-popUp:active input[type=submit],
-.search-box-popUp:hover input[type=submit] {
+.search-box-popUp:active #heaberSub,
+.search-box-popUp:hover #heaberSub {
     background-color: #000;
 }
 form{
@@ -69,7 +69,7 @@ form{
     outline: none;
 }
 
-.search-box-popUp input[type=submit] {
+.search-box-popUp #heaberSub {
     border-radius: 0 2px 3px 0;
     width: 42px;
     background-color: #555;

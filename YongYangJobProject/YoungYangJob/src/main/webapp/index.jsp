@@ -13,7 +13,8 @@
             <!-- 기업 이름 -->
             <b>&nbsp; enterprise</b><br>
             <!-- 간단한 취업 정보 -->
-            <label>&nbsp; 간단한 정보 </label>
+            <label>&nbsp; 간단한 정보 </label><br>
+            <label style="font-size: 12px;">&nbsp; 분야 </label>
         </div>
         <div class="etc-box">
             <!-- D-day -->

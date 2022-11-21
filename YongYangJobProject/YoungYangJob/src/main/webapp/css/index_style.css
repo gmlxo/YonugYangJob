@@ -1,65 +1,74 @@
 .box {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
+	padding-right: 15px; 
+	padding-left : 15px; 
+	margin-right : auto;
+	margin-left : auto;
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	border: 1px solid rgb(122, 17, 171);
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .index-box {
-    margin: 10px;
-    width: 338px;
-    height: 200px;
     border: 1px solid rgb(122, 17, 171);
-    overflow: hidden;
-    position: relative;
+	margin: 10px;
+	width: 400px;
+	height: 200px;
+	border: 1px solid rgb(122, 17, 171);
+	overflow: hidden;
+	position: relative;
 }
 
 .job-sea {
-    margin: 0 auto;
-    height: 29.3px;
-    font-size: 13px;
-    width: 192px;
-    float: right;
-    margin-right: 50px;
-    border: 1px solid rgb(165, 120, 207);
+	margin: 0 auto;
+	height: 29.3px;
+	font-size: 13px;
+	width: 192px;
+	float: right;
+	margin-right: 50px;
+	border: 1px solid rgb(165, 120, 207);
 }
 
 input[type=search] {
-    height: 27.4px;
-    width: 135.38px;
-    border: none;
+	height: 27.4px;
+	width: 135.38px;
+	border: none;
 }
 
 input[type=submit] {
-    margin-top: -1px;
-    border: none;
-    width: 50.4px;
-    height: 27.4px;
-    color: #000;
-    background-color: #fff;
+	margin-top: -1px;
+	border: none;
+	width: 50.4px;
+	height: 27.4px;
+	color: #000;
+	background-color: #fff;
 }
 
 .index-box:hover {
-    border: 2.5px solid rgb(122, 17, 171);
+	border: 2.5px solid rgb(122, 17, 171);
 }
 
 .index-box>.enterprise>img {
-    margin-top: 3px;
-    margin-left: 3px;
-    width: 332px;
-    height: 80px;
+	margin-top: 3px;
+	margin-left: 3px;
+	height: 80px;
 }
 
 .index-box>.enterprise>label {
-    font-size: 13px;
+	font-size: 13px;
 }
 
 .index-box>.etc-box {
-    position: absolute;
-    bottom: 0%;
+	position: absolute;
+	bottom: 0%;
 }
 
 .etc-box {
-    width: 340px;
-    display: flex;
-    justify-content: space-between;
+	width: 340px;
+	display: flex;
+	justify-content: space-between;
 }
