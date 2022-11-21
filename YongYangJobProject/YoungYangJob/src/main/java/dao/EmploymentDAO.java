@@ -97,8 +97,8 @@ public class EmploymentDAO {
 				
 				vo.setCompany_name(rs.getString("company_name"));
 				vo.setEmp_day(rs.getString("emp_day"));
-				vo.setCompany_name(rs.getString("company_name"));
-				vo.setCompany_name(rs.getString("company_name"));
+				vo.setEnt_logo_img(rs.getString("logo_img"));
+				vo.setEmp_contents(rs.getString("emp_comtents"));
 				vo.setCompany_name(rs.getString("company_name"));
 				
 				indexList.add(vo);
