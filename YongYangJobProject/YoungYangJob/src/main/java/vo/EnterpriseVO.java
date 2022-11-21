@@ -8,6 +8,7 @@ public class EnterpriseVO {
 	private String address;
 	private String url;
 	private String explanation;
+	private String logo_img;
 	
 	public EnterpriseVO() {
 		super();
@@ -67,5 +68,13 @@ public class EnterpriseVO {
 
 	public void setExplanation(String explanation) {
 		this.explanation = explanation;
+	}
+
+	public String getLogo_img() {
+		return logo_img;
+	}
+
+	public void setLogo_img(String logo_img) {
+		this.logo_img = logo_img;
 	}
 }

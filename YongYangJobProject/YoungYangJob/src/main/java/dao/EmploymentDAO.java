@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import common.JdbcUtil;
 import vo.EmploymentVO;
+import vo.Ent_emp_VO;
 
 public class EmploymentDAO {
 	Connection conn = null;
@@ -78,5 +79,37 @@ public class EmploymentDAO {
 			JdbcUtil.close(conn, pstmt);
 		}
 		return n;
+	}
+
+//	index 의 필요한 값들을 가져온다.
+	public ArrayList<Ent_emp_VO> indexEntList() {
+		ArrayList<Ent_emp_VO> indexList = new ArrayList<Ent_emp_VO>();
+		sql = "SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 70) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name";
+
+		try {
+			conn = JdbcUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			Ent_emp_VO vo = null;
+
+			while (rs.next()) {
+				vo = new Ent_emp_VO();
+				
+				vo.setCompany_name(rs.getString("company_name"));
+				vo.setEmp_day(rs.getString("emp_day"));
+				vo.setCompany_name(rs.getString("company_name"));
+				vo.setCompany_name(rs.getString("company_name"));
+				vo.setCompany_name(rs.getString("company_name"));
+				
+				indexList.add(vo);
+			}
+
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt, rs);
+		}
+		return indexList;
 	}
 }

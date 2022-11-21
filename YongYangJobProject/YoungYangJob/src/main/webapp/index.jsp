@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="vo.EmploymentVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -5,6 +7,13 @@
 <%@ include file="header.jsp" %>
 <link rel="stylesheet" href="/css/index_style.css">
 
+<%
+	ArrayList<EmploymentVO> indexList = (ArrayList<EmploymentVO>) session.getAttribute("indexList");
+	if(list == null) {
+		response.sendRedirect("/index");
+	} else {
+		for(EmploymentVO emt : indexList){
+%>
 <div class="box">
     <div class="index-box">
         <div class="enterprise">
@@ -31,17 +40,10 @@
             </div>
         </div>
     </div>
-
-    <div class="index-box"></div>
-    <div class="index-box"></div>
-
-    <div class="index-box"></div>
-    <div class="index-box"></div>
-    <div class="index-box"></div>
-
-    <div class="index-box"></div>
-    <div class="index-box"></div>
-    <div class="index-box"></div>
 </div>
+<% 
+		}
+	}
+%>
 
 <%@ include file="footer.jsp" %>

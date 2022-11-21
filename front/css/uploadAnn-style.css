@@ -35,7 +35,8 @@ a:hover{
     width: 750px;
 } */
 dl{
-    width: 230px;
+    margin-left: -20px;
+    width: 210px;
 }
 dd{
     font-size: 14px;

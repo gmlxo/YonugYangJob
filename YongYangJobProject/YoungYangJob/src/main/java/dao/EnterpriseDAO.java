@@ -34,6 +34,7 @@ public class EnterpriseDAO {
 				vo.setUrl(rs.getString("url"));
 				vo.setAddress(rs.getString("address"));
 				vo.setExplanation(rs.getString("explanation"));
+				vo.setLogo_img(rs.getString("logo_img"));
 
 				entList.add(vo);
 			}

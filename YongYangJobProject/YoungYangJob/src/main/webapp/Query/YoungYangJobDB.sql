@@ -71,7 +71,14 @@ SELECT * FROM enterprise_tbl_gmlxo;
 SELECT * FROM community_tbl_gmlxo;
 SELECT * FROM comment_tbl_gmlxo;
 
-SELECT ent_name, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(establishment_date, 'YYYY-MM-DD')+1 ity_day, substr(Explanation, 1, 70), logo_img FROM enterprise_tbl_gmlxo;
+SELECT 
+    emp.company_name, 
+    TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD')  emp_day, 
+    substr(emp.emp_contents, 1, 70) emp_contents, 
+    ent.logo_img,
+    ent.sectors
+    FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
+    where emp.company_name = ent.ent_name;
 --DELETE FROM community_tbl_gmlxo where ity_idx = 3;
 --DELETE FROM comment_tbl_gmlxo;
 
