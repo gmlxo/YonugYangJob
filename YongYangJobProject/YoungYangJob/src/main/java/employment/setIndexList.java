@@ -13,10 +13,10 @@ import dao.EmploymentDAO;
 import vo.Ent_emp_VO;
 
 @WebServlet("/index")
-public class setIndex extends HttpServlet {
+public class setIndexList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public setIndex() {
+	public setIndexList() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -26,10 +26,17 @@ public class setIndex extends HttpServlet {
 		EmploymentDAO dao = new EmploymentDAO();
 		ArrayList<Ent_emp_VO> list = dao.indexEntList();
 		
+		String n = request.getParameter("n");
+		
 		if(list != null) {
 			request.setAttribute("indexList", list);
 		}
-		request.getRequestDispatcher("/index.jsp").forward(request, response);
+		
+		if(n.equals("1")) 
+			request.getRequestDispatcher("/index.jsp").forward(request, response);
+		else if (n.equals("2")) {
+			request.getRequestDispatcher("/Information/jobs.jsp").forward(request, response);
+		}
 	}
 
 }

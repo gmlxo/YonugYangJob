@@ -22,7 +22,7 @@
                     <td colspan="3"><input type="text" name="company_name" id="col3"></td>
                 </tr>
                 <tr>
-                    <td><b>채용 홈페이지</b></td>
+                    <td><b>채용 페이지</b></td>
                     <td colspan="3"><input type="url" name="emp_url" id="col3" placeholder="ex) https://www.page.com"></td>
                 </tr>
                 <tr>

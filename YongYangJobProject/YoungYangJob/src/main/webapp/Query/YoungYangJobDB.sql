@@ -64,6 +64,7 @@ insert into user_tbl_gmlxo values ('a', 'a', 'a', sysdate, 'test2@gmail.com', '4
 select * from user_tbl_gmlxo;
 select * from user_tbl_gmlxo where user_id='admin' and user_pwd='1234';
 DELETE FROM user_tbl_gmlxo WHERE user_type = '1';
+
 commit;
 
 select * from employment_tbl_gmlxo;
@@ -73,14 +74,32 @@ SELECT * FROM comment_tbl_gmlxo;
 
 SELECT 
     emp.company_name, 
-    TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD')  emp_day, 
+    TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, 
     substr(emp.emp_contents, 1, 70) emp_contents, 
-    ent.logo_img,
-    ent.sectors
-    FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
-    where emp.company_name = ent.ent_name;
+    ent.logo_img, 
+    ent.sectors 
+FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
+where emp.company_name = ent.ent_name;
+
+SELECT 
+    ent_name,
+    sectors,
+    TO_CHAR(establishment_date, 'YYYY"년 "MM"월 "DD"일"'),
+    representative,
+    address,
+    url,
+    Explanation,
+    logo_img
+FROM enterprise_tbl_gmlxo 
+where 
+    ent_name like '%?%' or 
+    sectors like '%전기%' Or
+    address like '%?%'
+ORDER by ent_name asc;
 --DELETE FROM community_tbl_gmlxo where ity_idx = 3;
 --DELETE FROM comment_tbl_gmlxo;
+
+SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 70) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name;
 
 insert into enterprise_tbl_gmlxo VALUES ('test_ent', '전기', sysdate, '양만모', '우리집_myHome', '중복방지1', '쓰기 귀찮아', 'https://www.viewhotels.jp/asakusa-annex/wp-content/uploads/sites/6/2020/03/test-img.jpg');
 insert into employment_tbl_gmlxo values ('testTitle', 'admin', 'test@gmail.com', '지야조명', 'no', '1', '1', '1', sysdate + 10, 'test emp');

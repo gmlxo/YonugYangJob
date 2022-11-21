@@ -1,12 +1,15 @@
 .wrapper{
-    width: 500px;
+    width: 930px;
     margin: auto;
 }
+.information{
+	margin-left: 10px;
+}
 .headerEnt{
-    margin: auto;
+    /* margin: auto; */
     float: left;
     border-bottom: 1px solid #000;
-    width: 500px;
+    width: 910px;
     text-align: left;
     font-size: 15px;
     color: #888;
@@ -20,10 +23,10 @@
 }
 .contentsEnt{
     /* margin-top: -17px; */
-    width: 600px;
+    width: 900px;
 }
 table{
-	width: 500px;
+	width: 800px;
     font-size: 13px;
     background-color: rgb(241, 241, 241);
     border: 1px solid rgb(170, 170, 170);
@@ -40,7 +43,10 @@ dt{
     width: 60px;
     float: left;
 }
+.addEnt{
+	width: 360px;
+}
 .line{
-    width: 500px;
+    width: 910px;
     border-bottom: 1px solid #888;
 }

@@ -13,7 +13,7 @@
 	if(indexList != null) {
 		for(Ent_emp_VO vo : indexList){
 %>
-    <div class="index-box">
+    <div class="index-box" onclick="location.href='/?title=<%=vo.getEmp_title()%>';">
         <div class="enterprise">
             <!-- 기업 로고 -->
             <img src="<%= vo.getEnt_logo_img() %>" alt="logo"> <br>
@@ -32,7 +32,7 @@
 <% 
 		}
 	} else {
-		response.sendRedirect("/index");
+		response.sendRedirect("/index?n=1");
 	}
 %></div>
 <%@ include file="footer.jsp" %>

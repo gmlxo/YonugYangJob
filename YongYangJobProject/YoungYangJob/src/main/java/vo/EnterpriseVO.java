@@ -1,6 +1,7 @@
 package vo;
 
 public class EnterpriseVO {
+	private int num;
 	private String ent_name;
 	private String sectors;
 	private String establishment_date;
@@ -12,6 +13,15 @@ public class EnterpriseVO {
 	
 	public EnterpriseVO() {
 		super();
+	}
+	
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
 	}
 
 	public String getEnt_name() {
