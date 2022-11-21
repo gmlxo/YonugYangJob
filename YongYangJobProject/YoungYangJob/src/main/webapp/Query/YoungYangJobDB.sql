@@ -107,9 +107,9 @@ select
     emp.company_name,
     TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, 
     emp.emp_url,
-    emp.career,
-    emp.education,
-    emp.work_type,
+    decode(emp.career, '1','무관', '2', '~ 2년', '5','~ 5년', '8','~ 10년', '9', '10 ~') career,
+    decode(emp.education, '1','고졸', '2','2년제', '4','4년제', '5', '대학원') education,
+    decode(emp.work_type, '1','비정규직', '2', '정규직') work_type,
     emp_contents
 from employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
 where emp.company_name = ent.ent_name;
