@@ -61,7 +61,7 @@
                             </dl>
                         </td>
                         <td colspan="2">
-                            <dl>
+                            <dl class="up">
                                 <dt>담당자 연락처</dt>
                                 <dd>msaaa794274@gmail.com</dd>
                             </dl>
@@ -69,13 +69,13 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <dl>
+                            <dl class="up">
                                 <dt>홈페이지</dt>
                                 <dd><a href="#">ent_url</a></dd>
                             </dl>
                         </td>
                         <td colspan="2">
-                            <dl>
+                            <dl class="up">
                                 <dt>기업 주소</dt>
                                 <dd>ent_address</dd>
                             </dl>

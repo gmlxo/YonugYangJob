@@ -75,7 +75,7 @@ SELECT * FROM comment_tbl_gmlxo;
 SELECT 
     emp.company_name, 
     TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, 
-    substr(emp.emp_contents, 1, 70) emp_contents, 
+    emp_contents, 
     ent.logo_img, 
     ent.sectors 
 FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
@@ -86,6 +86,7 @@ SELECT ent_name, sectors, TO_CHAR(establishment_date, 'YYYY"년 "MM"월 "DD"일"
 --DELETE FROM comment_tbl_gmlxo;
 
 SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 70) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name and ent.address like '%?%';
+SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 70) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name and ent.address like '%my%';
 
 insert into enterprise_tbl_gmlxo VALUES ('test_ent', '전기', sysdate, '양만모', '우리집_myHome', '중복방지1', '쓰기 귀찮아', 'https://www.viewhotels.jp/asakusa-annex/wp-content/uploads/sites/6/2020/03/test-img.jpg');
 insert into employment_tbl_gmlxo values ('testTitle', 'admin', 'test@gmail.com', '지야조명', 'no', '1', '1', '1', sysdate + 10, 'test emp');
@@ -95,3 +96,20 @@ insert into comment_tbl_gmlxo values (com_seq.NEXTVAL, 1, 'admin', '2022-11-06',
 SELECT ity_idx, user_id, ity_title, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity_day, 'YYYY-MM-DD')+1 ity_day, substr(ity_contents, 1, 10) FROM community_tbl_gmlxo;
 SELECT TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity_day, 'YYYY-MM-DD') FROM community_tbl_gmlxo;
 SELECT com_idx, ity_idx, user_id, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(com_day, 'YYYY-MM-DD')+1 com_day, com_contents FROM comment_tbl_gmlxo where ity_idx=1;
+select decode(career, '1', 'test', '2', 'aa') from employment_tbl_gmlxo;
+select 
+    ent.sectors,
+    ent.address,
+    ent.url,
+    emp.emp_title,
+    emp.emp_name,
+    emp.emp_gmail,
+    emp.company_name,
+    TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, 
+    emp.emp_url,
+    emp.career,
+    emp.education,
+    emp.work_type,
+    emp_contents
+from employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
+where emp.company_name = ent.ent_name;

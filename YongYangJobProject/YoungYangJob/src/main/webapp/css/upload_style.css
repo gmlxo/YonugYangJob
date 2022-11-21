@@ -35,7 +35,10 @@ a:hover {
 }
 
 dl {
-	width: 395px;
+	width: 280px;
+}
+.up {
+	width: 550px
 }
 
 dt {
@@ -117,4 +120,8 @@ textarea {
 	resize: none;
 	width: 550px;
 	height: 170px;
+}
+
+.contentsAnn > table > dl {
+	width: 100px;
 }
