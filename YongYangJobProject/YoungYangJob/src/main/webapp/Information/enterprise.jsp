@@ -5,18 +5,19 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/enterprise_style.css">
-
-	<div class="wrapper">
 <%
-	int count = (int) request.getAttribute("count");
+	int count = (int) request.getAttribute("count");	
 	ArrayList<EnterpriseVO> entList = (ArrayList<EnterpriseVO>) request.getAttribute("entList");
-	if(entList != null) {
-		for(EnterpriseVO ent : entList){
 %>
+	<div class="wrapper">
         <div class="information">
             <div class="headerEnt">
                 <label> <b>기업 정보 </b>총 <%= count %> 건</label>
             </div><br>
+<%
+	if(entList != null) {
+		for(EnterpriseVO ent : entList){
+%>
             <div class="ent">
                 <h3><%= ent.getEnt_name() %></h3>
                 <div class="contentsEnt">
@@ -69,11 +70,10 @@
             </div>
             <br>
             <div class="line"></div>
-           
-           </div>
 <%
 		}
 	}
 %>
+            </div>
             </div>
 <%@ include file="/footer.jsp" %>

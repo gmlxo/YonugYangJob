@@ -8,8 +8,8 @@
 
 	<div class="wrapper">
         <div class="job-sea">
-            <form action="#" method="get">
-                <input type="search" id="jobSea" placeholder=" 지역을 입력해 주세요">
+            <form action="/seaJob" method="get">
+                <input type="search" id="jobSea" name="keyword" placeholder=" 지역을 입력해 주세요">
                 <input type="submit" value="검색">
             </form>
         </div> <br>
@@ -37,8 +37,6 @@
     </div>
 <% 
 		}
-	} else {
-		response.sendRedirect("/index");
 	}
 %>
     </div>

@@ -42,12 +42,7 @@
                         </td>
                     </tr>
                 </table>
-                <label> 내용's<br>
-                    ss<br>
-                    ss<br>
-                    ss<br>
-                    ss
-                </label>
+                <label> 내용's </label>
             </div>
         </div>
     </div>

@@ -78,7 +78,7 @@ public class EnterpriseDAO {
 
 	public int allCountEnt(String n, String keyword) {
 		if (n.equals("1")) {
-			sql = "select count(*) from enterprise_tbl_gmlxo where ent_name like '%?%' or sectors like '%?%' or address like '%?%'";
+			sql = "select count(*) from enterprise_tbl_gmlxo where ent_name like '%"+keyword+"%' or sectors like '%"+keyword+"%' or address like '%"+keyword+"%' ORDER by ent_name asc";
 		} else if (n.equals("2")) {
 			sql = "select count(*) from enterprise_tbl_gmlxo";
 		}
@@ -87,9 +87,12 @@ public class EnterpriseDAO {
 		try {
 			conn = JdbcUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
-			for (int i = 1; i <= 3; i++) {
-				pstmt.setString(i, keyword);
-			}
+
+//			if (n.equals("1")) {
+//				for (int i = 0; i < 3; i++) {
+//					pstmt.setString(i, keyword);
+//				}
+//			}
 			rs = pstmt.executeQuery();
 
 			while (rs.next()) {
@@ -108,21 +111,18 @@ public class EnterpriseDAO {
 	public ArrayList<EnterpriseVO> EntDateList(String n, String keyword) {
 		ArrayList<EnterpriseVO> entList = new ArrayList<EnterpriseVO>();
 
-		if (n.equals("1")) {
-			sql = "SELECT ent_name, sectors, TO_CHAR(establishment_date, 'YYYY\"년 \"MM\"월 \"DD\"일\"'), representative, address, url, Explanation, logo_img FROM enterprise_tbl_gmlxo where ent_name like '%?%' or sectors like '%?%' or address like '%?%' ORDER by ent_name asc";
-		} else if(n.equals("2")) {
-			sql = "SELECT ent_name, sectors, TO_CHAR(establishment_date, 'YYYY\"년 \"MM\"월 \"DD\"일\"'), representative, address, url, Explanation, logo_img FROM enterprise_tbl_gmlxo";
-		}
-
 		try {
+			if (n.equals("1")) {
+				sql = "SELECT ent_name, sectors, TO_CHAR(establishment_date, 'YYYY\"년 \"MM\"월 \"DD\"일\"') establishment_date, representative, address, url, Explanation, logo_img FROM enterprise_tbl_gmlxo where ent_name like '%"+keyword+"%' or sectors like '%"+keyword+"%' or address like '%"+keyword+"%' ORDER by ent_name asc";
+			} else if (n.equals("2")) {
+				sql = "SELECT ent_name, sectors, TO_CHAR(establishment_date, 'YYYY\"년 \"MM\"월 \"DD\"일\"') establishment_date, representative, address, url, Explanation, logo_img FROM enterprise_tbl_gmlxo";
+			}
+
 			conn = JdbcUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
 
-			for (int i = 1; i <= 3; i++) {
-				pstmt.setString(i, keyword);
-			}
-
 			rs = pstmt.executeQuery();
+
 			EnterpriseVO vo = null;
 
 			while (rs.next()) {
