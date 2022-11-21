@@ -1,5 +1,5 @@
 <%@page import="java.util.ArrayList"%>
-<%@page import="vo.EmploymentVO"%>
+<%@page import="vo.Ent_emp_VO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,27 +8,27 @@
 <link rel="stylesheet" href="/css/index_style.css">
 
 <%
-	ArrayList<EmploymentVO> indexList = (ArrayList<EmploymentVO>) session.getAttribute("indexList");
+	ArrayList<Ent_emp_VO> indexList = (ArrayList<Ent_emp_VO>) session.getAttribute("indexList");
 	if(list == null) {
 		response.sendRedirect("/index");
 	} else {
-		for(EmploymentVO emt : indexList){
+		for(Ent_emp_VO vo : indexList){
 %>
 <div class="box">
     <div class="index-box">
         <div class="enterprise">
             <!-- 기업 로고 -->
-            <img src="https://www.viewhotels.jp/asakusa-annex/wp-content/uploads/sites/6/2020/03/test-img.jpg" alt="logo"> <br>
+            <img src="<%= vo.getEnt_logo_img %>" alt="logo"> <br>
             <!-- 기업 이름 -->
-            <b>&nbsp; enterprise</b><br>
+            <b>&nbsp; <%= vo.getCompany_name %></b><br>
             <!-- 간단한 취업 정보 -->
-            <label>&nbsp; 간단한 정보 </label><br>
-            <label style="font-size: 12px;">&nbsp; 분야 </label>
+            <label>&nbsp; <%= vo.getEmp_contents %> </label><br>
+            <label style="font-size: 12px;">&nbsp; <%= vo.getSectors %> </label>
         </div>
         <div class="etc-box">
             <!-- D-day -->
             <div class="day">
-                &nbsp;<label> D - ? </label>
+                &nbsp;<label> D - <%= vo.getEmp_day %> </label>
             </div>
             <!-- 관심 기업 -->    
             <div class="star">
