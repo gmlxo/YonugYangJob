@@ -29,10 +29,10 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="/index" class="nav-link px-2 link-secondary">Home</a></li>
                 <li><a href="/Information/jobs.html" class="nav-link px-2 link-dark hov"> 채용정보 </a></li>
                 <li><a href="/Information/enterprise.html" class="nav-link px-2 link-dark hov"> 기업정보 </a></li>
-                <li><a href="/Information/community.html" class="nav-link link-dark hov"> 커뮤니티 </a></li>
+                <li><a href="/ityList" class="nav-link link-dark hov"> 커뮤니티 </a></li>
                 <li><div class="search-box-popUp">
                     <form action="#" method="get">
                         &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

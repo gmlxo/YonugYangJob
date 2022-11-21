@@ -1,22 +1,15 @@
 .box {
-	padding-right: 15px; 
-	padding-left : 15px; 
-	margin-right : auto;
-	margin-left : auto;
+	width: 930px;
 	margin-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
-	border: 1px solid rgb(122, 17, 171);
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .index-box {
 	margin: 10px;
-	width: 400px;
-	height: 200px;
+	width: 280px;
+	height: 170px;
 	border: 1px solid rgb(122, 17, 171);
 	overflow: hidden;
 	position: relative;
@@ -54,6 +47,7 @@ input[type=submit] {
 .index-box>.enterprise>img {
 	margin-top: 3px;
 	margin-left: 3px;
+	width: 272px;
 	height: 80px;
 }
 
@@ -67,7 +61,17 @@ input[type=submit] {
 }
 
 .etc-box {
-	width: 340px;
+	width: 270px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.secInto{
+	color: #888;
+	font-size: 12px;
+	float: left;
+}
+.day{
+	float: right;
+	font-size: 13px;
 }

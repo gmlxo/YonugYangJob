@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/css/community_style.css">
 
 	<div class="wrapper">
-	<a href="/upload/community.jsp">게시물 올리기</a><br>
+		<a href="/upload/community.jsp" id="ityA">게시물 올리기</a><br>
 	
 <%
 	if(ityList != null){

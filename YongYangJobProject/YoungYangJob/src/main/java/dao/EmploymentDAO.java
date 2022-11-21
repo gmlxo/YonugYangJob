@@ -84,7 +84,7 @@ public class EmploymentDAO {
 //	index 의 필요한 값들을 가져온다.
 	public ArrayList<Ent_emp_VO> indexEntList() {
 		ArrayList<Ent_emp_VO> indexList = new ArrayList<Ent_emp_VO>();
-		sql = "SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 70) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name";
+		sql = "SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 20) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name";
 
 		try {
 			conn = JdbcUtil.getConnection();
@@ -96,9 +96,10 @@ public class EmploymentDAO {
 				vo = new Ent_emp_VO();
 				
 				vo.setCompany_name(rs.getString("company_name"));
+				vo.setEmp_title(rs.getString("emp_title"));
 				vo.setEmp_day(rs.getString("emp_day"));
 				vo.setEnt_logo_img(rs.getString("logo_img"));
-				vo.setEmp_contents(rs.getString("emp_comtents"));
+				vo.setEmp_contents(rs.getString("emp_contents"));
 				vo.setEnt_sectors(rs.getString("sectors"));
 
 				indexList.add(vo);

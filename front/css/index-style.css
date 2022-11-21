@@ -1,12 +1,14 @@
 .box {
+    width: 930px;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .index-box {
     margin: 10px;
-    width: 338px;
+    width: 285px;
     height: 200px;
     border: 1px solid rgb(122, 17, 171);
     overflow: hidden;

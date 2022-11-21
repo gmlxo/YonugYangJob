@@ -48,6 +48,7 @@ a:hover {
     top: 7px;
     width: 270px;
     font-size: 15px;
+    height: 26px;
     /* text-align: center; */
     border: 1px solid #000;
 }
@@ -67,10 +68,12 @@ form{
 .search-box-popUp input[type=search] {
     width: 200px;
     outline: none;
+    height: 23px;
 }
 
 .search-box-popUp #heaberSub {
     border-radius: 0 2px 3px 0;
+    height: 25px;
     width: 42px;
     background-color: #555;
     color: #fff;
