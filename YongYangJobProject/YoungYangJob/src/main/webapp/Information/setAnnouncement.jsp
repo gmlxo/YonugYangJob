@@ -8,14 +8,14 @@
         <div class="uploadAnn">
             <div class="headAnn">
                 <div class="company_name">
-                    company name
+                    company name <%= %>
                 </div>
                 <div class="head">
                     <div class="title_ann_upload">
-                        <b>title</b>
+                        <b>title <%= %> </b>
                     </div>
                     <div class="support">
-                        <a href="#">지원하러 가기</a>&nbsp;
+                        <a href="<%= %>">지원하러 가기 <%= %></a>&nbsp;
                     </div>
                 </div>
             </div>
@@ -25,25 +25,25 @@
                         <td>
                             <dl>
                                 <dt>경력</dt>
-                                <dd>무관</dd>
+                                <dd><%= %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>학력</dt>
-                                <dd>대졸</dd>
+                                <dd><%= %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>근무 형태</dt>
-                                <dd>계약직</dd>
+                                <dd><%= %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>기간</dt>
-                                <dd>D - n</dd>
+                                <dd>D - <%= %></dd>
                             </dl>
                         </td>
                     </tr>
@@ -51,19 +51,19 @@
                         <td>
                             <dl>
                                 <dt>분야</dt>
-                                <dd>IT</dd>
+                                <dd><%= %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>담당자 이름</dt>
-                                <dd>양희태</dd>
+                                <dd>%= %></dd>
                             </dl>
                         </td>
                         <td colspan="2">
                             <dl class="up">
                                 <dt>담당자 연락처</dt>
-                                <dd>msaaa794274@gmail.com</dd>
+                                <dd><%= %></dd>
                             </dl>
                         </td>
                     </tr>
@@ -71,13 +71,13 @@
                         <td colspan="2">
                             <dl class="up">
                                 <dt>홈페이지</dt>
-                                <dd><a href="#">ent_url</a></dd>
+                                <dd><a href="<%= %>"><%= %></a></dd>
                             </dl>
                         </td>
                         <td colspan="2">
                             <dl class="up">
                                 <dt>기업 주소</dt>
-                                <dd>ent_address</dd>
+                                <dd><%= %></dd>
                             </dl>
                         </td>
                     </tr>
