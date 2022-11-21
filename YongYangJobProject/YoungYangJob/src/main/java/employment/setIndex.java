@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dao.EmploymentDAO;
-import vo.EmploymentVO;
+import vo.Ent_emp_VO;
 
 @WebServlet("/index")
 public class setIndex extends HttpServlet {
@@ -24,7 +24,7 @@ public class setIndex extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		EmploymentDAO dao = new EmploymentDAO();
-		ArrayList<EmploymentVO> list = dao.indexEntList();
+		ArrayList<Ent_emp_VO> list = dao.indexEntList();
 		
 		if(list != null) {
 			request.setAttribute("indexList", list);
