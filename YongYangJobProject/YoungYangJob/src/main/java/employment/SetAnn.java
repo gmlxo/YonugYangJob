@@ -24,7 +24,11 @@ public class SetAnn extends HttpServlet {
 		EmploymentDAO dao = new EmploymentDAO();
 		
 		String title = request.getParameter("title");
-		
 		ArrayList<Ent_emp_VO> list = dao.seaJobList(title);
+		
+		if(list != null) {
+			request.setAttribute("annList", list);
+		}
+		request.getRequestDispatcher("/Information/setAnnouncement.jsp").forward(request, response);
 	}
 }
