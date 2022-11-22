@@ -25,6 +25,6 @@ public class SetAnn extends HttpServlet {
 		
 		String title = request.getParameter("title");
 		
-		ArrayList<Ent_emp_VO> list = dao.
+		ArrayList<Ent_emp_VO> list = dao.seaJobList(title);
 	}
 }

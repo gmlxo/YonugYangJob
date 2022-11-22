@@ -43,7 +43,7 @@ public class login extends HttpServlet {
 		if (log != null) {
 			session.setAttribute("logOK", log[0]);
 			session.setAttribute("type", log[1]);
-			response.sendRedirect("/index");
+			response.sendRedirect("/index?n=1");
             /* request.getRequestDispatcher("/memberList.jsp").forward(request, response); */
 		} else {
 			out.println("<script> alert(\"로그인에 실패하였습니다.\"); history.go(-1); </script>");

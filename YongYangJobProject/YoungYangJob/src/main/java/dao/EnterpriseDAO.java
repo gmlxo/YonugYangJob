@@ -88,11 +88,6 @@ public class EnterpriseDAO {
 			conn = JdbcUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
 
-//			if (n.equals("1")) {
-//				for (int i = 0; i < 3; i++) {
-//					pstmt.setString(i, keyword);
-//				}
-//			}
 			rs = pstmt.executeQuery();
 
 			while (rs.next()) {
