@@ -3,16 +3,16 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/upload_style.css">
-<% ArrayList<CommunityVO> annList = (ArrayList<CommunityVO>)request.getAttribute("ityList"); %>		
+<% ArrayList<Ent_emp_VO> annList = (ArrayList<Ent_emp_VO>)request.getAttribute("annList"); %>		
 	<div class="wrapper">
 <%
 	if(annList != null){
-		for(CommunityVO ity : ityList){
+		for(Ent_emp_VO ann : annList){
 %>
 	<div class="uploadAnn">
             <div class="headAnn">
                 <div class="company_name">
-                    company name <%= %>
+                    company name <%=  %>
                 </div>
                 <div class="head">
                     <div class="title_ann_upload">
