@@ -3,9 +3,13 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/upload_style.css">
-
+<% ArrayList<CommunityVO> annList = (ArrayList<CommunityVO>)request.getAttribute("ityList"); %>		
 	<div class="wrapper">
-        <div class="uploadAnn">
+<%
+	if(annList != null){
+		for(CommunityVO ity : ityList){
+%>
+	<div class="uploadAnn">
             <div class="headAnn">
                 <div class="company_name">
                     company name <%= %>
@@ -85,6 +89,10 @@
                 <label class="ann_con"> 내용's</label>
             </div>
         </div>
+<%
+		}
+	}
+%>
     </div>
     
 <%@ include file="/footer.jsp" %>
