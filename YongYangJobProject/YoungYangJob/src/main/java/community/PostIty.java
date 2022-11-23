@@ -29,12 +29,15 @@ public class PostIty extends HttpServlet {
 		
 		String id, title, contents;
 		
+	/* id, title, contents 값을 받아옴 */
 		id = request.getParameter("id");
 		title = request.getParameter("title");
 		contents = request.getParameter("contents");
 		
+		/* insertIty에 값을 보내고 실행 */
 		int n = dao.insetIty(id, title, contents);
 		
+	/* 성공하면 ityList로 이동 */
 		if(n>0) 
 			response.sendRedirect("/ityList");
 		else
