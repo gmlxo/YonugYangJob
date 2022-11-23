@@ -30,6 +30,8 @@ public class jobPosting extends HttpServlet {
 		String emp_title, emp_name, emp_email, company_name, emp_url, career, education, work_type, emp_day,
 				emp_contents;
 		
+		/* emp_title, emp_name, emp_email, company_name, emp_url, career, education, work_type, emp_day,
+				emp_contents 값 받아오기 */
 		emp_title =  request.getParameter("emp_title");
 		emp_name =  request.getParameter("emp_name");
 		emp_email =  request.getParameter("emp_email");
@@ -41,9 +43,11 @@ public class jobPosting extends HttpServlet {
 		emp_day =  request.getParameter("emp_day");
 		emp_contents =  request.getParameter("emp_contents");
 
+		/* 값 보내 넣어주기 */
 		int n = dao.insertEmp(emp_title, emp_name, emp_email, company_name, emp_url, career, education, work_type,
 				emp_day, emp_contents);
 		
+		/* 성공하면 index jsp 로 이동 */
 		if(n>0) {
 			out.println("<script> alert(\"추가되였습니다.\");</script>");
 			response.sendRedirect("/index.jsp");
