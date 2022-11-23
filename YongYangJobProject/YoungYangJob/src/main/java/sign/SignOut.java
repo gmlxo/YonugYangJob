@@ -22,11 +22,15 @@ public class SignOut extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		String id, type;
+		
+	/* 세션 값 불러오기 */
 		id = (String) session.getAttribute("logOK");
 		type = (String) session.getAttribute("type");
 		
+		/* 세션 값들 삭제 */
 		session.invalidate();
 		
+		/* index jsp 로 이동 */
 		response.sendRedirect("/index.jsp");
 	}
 }
