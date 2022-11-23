@@ -29,17 +29,17 @@ CREATE TABLE employment_tbl_gmlxo (
     education char(1), -- 학력
     work_type char(1), -- 근무형태
     emp_day date, -- 언제까지 모집하는지
-    emp_contents varchar2(4000)
+    emp_contents varchar2(4000) -- ㅊㅐ용 내용
 );
 
 DROP TABLE employment_tbl_gmlxo;
 
 CREATE TABLE community_tbl_gmlxo (
     ity_idx int CONSTRAINT ity_gmlxo_idx_pk primary key,
-    user_id varchar2(255) CONSTRAINT ity_user_gmlxo_id_fk REFERENCES user_tbl_gmlxo(user_id),
-    ity_title varchar2(255),
-    ity_day date,
-    ity_contents varchar2(4000)
+    user_id varchar2(255) CONSTRAINT ity_user_gmlxo_id_fk REFERENCES user_tbl_gmlxo(user_id), -- 게시물 올린 사람 아이디
+    ity_title varchar2(255), -- 게시물 제목
+    ity_day date, -- 게시 날
+    ity_contents varchar2(4000) -- ㄱㅔ시물 내용
 );
 
 CREATE SEQUENCE ity_seq;
@@ -47,10 +47,10 @@ DROP SEQUENCE ity_seq;
 
 CREATE TABLE comment_tbl_gmlxo (
     com_idx int CONSTRAINT com_gmlxo_idx_pk primary key,
-    ity_idx int CONSTRAINT com_ity_gmlxo_idx_fk REFERENCES community_tbl_gmlxo(ity_idx),
-    user_id varchar2(255)CONSTRAINT com_user_gmlxo_id_fk REFERENCES user_tbl_gmlxo(user_id),
-    com_day date,
-    com_contents varchar2(4000)
+    ity_idx int CONSTRAINT com_ity_gmlxo_idx_fk REFERENCES community_tbl_gmlxo(ity_idx), -- 게시물 idx
+    user_id varchar2(255)CONSTRAINT com_user_gmlxo_id_fk REFERENCES user_tbl_gmlxo(user_id), -- 댓글단 사람 아이디
+    com_day date, -- 댓글단 날
+    com_contents varchar2(4000) -- 댓글 내용
 );
 CREATE SEQUENCE com_seq;
 DROP SEQUENCE com_seq;
