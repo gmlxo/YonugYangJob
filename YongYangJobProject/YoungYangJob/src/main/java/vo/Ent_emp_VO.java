@@ -1,6 +1,7 @@
 package vo;
 
 public class Ent_emp_VO {
+/* select join 용 VO */
 	private String ent_sectors;
 	private String ent_address;
 	private String ent_url;
