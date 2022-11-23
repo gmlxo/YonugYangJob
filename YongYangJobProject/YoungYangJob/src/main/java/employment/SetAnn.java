@@ -22,13 +22,17 @@ public class SetAnn extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		EmploymentDAO dao = new EmploymentDAO();
-		
+
+        /* title 값 받아오기 */
 		String title = request.getParameter("title");
-		ArrayList<Ent_emp_VO> list = dao.annEntEmpList(title);
+		/* title 에 맞는 값을 받아와 list에 넣어두기 */
+        ArrayList<Ent_emp_VO> list = dao.annEntEmpList(title);
 		
+        /* 값이 있으면 값을 저장 */
 		if(list != null) {
 			request.setAttribute("annList", list);
 		}
+        /* set annoucement jsp 로 이동 */
 		request.getRequestDispatcher("/Information/setAnnouncement.jsp").forward(request, response);
 	}
 }
