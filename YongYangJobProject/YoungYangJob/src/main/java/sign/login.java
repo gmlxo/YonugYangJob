@@ -38,8 +38,10 @@ public class login extends HttpServlet {
 		id = request.getParameter("id");
 		pwd = request.getParameter("pwd");
 
+        /* id에 맞는 pwd 가 있는지 확인 */
 		String[] log = dao.login(id, pwd);
 
+        /* 성공했다면 세션에 각각 맞게 저장 */
 		if (log != null) {
 			session.setAttribute("logOK", log[0]);
 			session.setAttribute("type", log[1]);
