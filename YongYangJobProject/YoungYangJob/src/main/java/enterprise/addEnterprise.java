@@ -20,6 +20,7 @@ public class addEnterprise extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+/* 기업 정보 추가 햐주는 servlet */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
