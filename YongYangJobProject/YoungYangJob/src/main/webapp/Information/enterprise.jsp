@@ -6,7 +6,9 @@
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/enterprise_style.css">
 <%
+  /* 정보 총 개수 */
 	int count = (int) request.getAttribute("count");	
+	/* ent list 값 받아오기 */
 	ArrayList<EnterpriseVO> entList = (ArrayList<EnterpriseVO>) request.getAttribute("entList");
 %>
 	<div class="wrapper">
@@ -15,7 +17,9 @@
                 <label> <b>기업 정보 </b>총 <%= count %> 건</label>
             </div><br>
 <%
+  /* ent list 가 null 이 아닐때 실행 */
 	if(entList != null) {
+		/* vo의 값이 있는 만큼 반복한다 */
 		for(EnterpriseVO ent : entList){
 %>
             <div class="ent">
