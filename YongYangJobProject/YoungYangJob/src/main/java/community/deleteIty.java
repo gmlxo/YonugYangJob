@@ -23,6 +23,7 @@ public class deleteIty extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
+/* 신고당한 게시물 삭제 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
