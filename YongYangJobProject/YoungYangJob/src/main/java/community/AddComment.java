@@ -23,6 +23,7 @@ public class AddComment extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+/* 댓글 작성 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
