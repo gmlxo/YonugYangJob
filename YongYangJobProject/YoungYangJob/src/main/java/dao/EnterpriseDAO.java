@@ -14,7 +14,7 @@ public class EnterpriseDAO {
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	String sql;
-
+// 모든 값 불러오기
 	public ArrayList<EnterpriseVO> getUserDateList() {
 		ArrayList<EnterpriseVO> entList = new ArrayList<EnterpriseVO>();
 		sql = "select * from enterprise_tbl_gmlxo";
@@ -48,6 +48,7 @@ public class EnterpriseDAO {
 		return entList;
 	}
 
+// ㄱㅣ업 정보 올리기
 	public int insertEnt(String ent_name, String representative, String establishment_date, String sectors, String url,
 			String address, String explanation) {
 		int n = 0;
@@ -76,6 +77,8 @@ public class EnterpriseDAO {
 		return n;
 	}
 
+// n 값이 1 이면 기업명 주소 업종 에 맞는 keyword 가 있으면 그 개수 불러오기
+// n 값이 2 이면 모든 기업 정보 개수 가져오기
 	public int allCountEnt(String n, String keyword) {
 		if (n.equals("1")) {
 			sql = "select count(*) from enterprise_tbl_gmlxo where ent_name like '%"+keyword+"%' or sectors like '%"+keyword+"%' or address like '%"+keyword+"%' ORDER by ent_name asc";
@@ -103,6 +106,8 @@ public class EnterpriseDAO {
 		return conut;
 	}
 
+// n 값이 1 이면 기업명 주소 업종 에 맞는 keyword 가 있으면 불러오기
+// n 값이 2 이면 모든 기업 정보 가져오기
 	public ArrayList<EnterpriseVO> EntDateList(String n, String keyword) {
 		ArrayList<EnterpriseVO> entList = new ArrayList<EnterpriseVO>();
 
