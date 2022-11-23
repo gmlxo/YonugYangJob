@@ -19,6 +19,7 @@ public class jobPosting extends HttpServlet {
 		super();
 	}
 
+/* 채용 공고 올리기 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
