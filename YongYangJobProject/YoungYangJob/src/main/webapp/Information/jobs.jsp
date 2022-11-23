@@ -8,6 +8,7 @@
 
 	<div class="wrapper">
         <div class="job-sea">
+						<!-- 검색한 지역에 맞게 정보 가져오게 하기 -->
             <form action="/seaJob" method="get">
                 <input type="search" id="jobSea" name="keyword" placeholder=" 지역을 입력해 주세요">
                 <input type="submit" value="검색">
@@ -15,7 +16,9 @@
         </div> <br>
         <div class="box">
 <%
+  /* index list 값 받아오기 */
 	ArrayList<Ent_emp_VO> indexList = (ArrayList<Ent_emp_VO>) request.getAttribute("indexList");
+	/* null 값이 아니면 실행 */
 	if(indexList != null) {
 		for(Ent_emp_VO vo : indexList){
 %>
@@ -31,7 +34,7 @@
         <div class="etc-box">
             <!-- 분야 -->
             <label class="secInto">&nbsp; #<%= vo.getEnt_sectors() %> </label>
-			<!-- D-day -->
+							<!-- D-day -->
              <label class="day"> D - <%= vo.getEmp_day() %> </label>
         </div>
     </div>
