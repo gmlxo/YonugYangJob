@@ -21,6 +21,7 @@ public class login extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
     
+/* 로그인 servlet */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		한글 인코딩 설정
