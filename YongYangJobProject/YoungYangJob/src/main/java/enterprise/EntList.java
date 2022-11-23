@@ -20,6 +20,7 @@ public class EntList extends HttpServlet {
 		super();
 	}
 
+/* 검샥한 결과에 맞는 기업 정보에 수와 그 정보들을 가져와 list에 담는 servlet */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
