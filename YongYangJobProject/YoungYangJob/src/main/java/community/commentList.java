@@ -32,7 +32,7 @@ public class commentList extends HttpServlet {
 		ArrayList<CommentVO> comList = dao.getComList(ity_idx);
 		ArrayList<CommunityVO> setIty = dao.setIty(ity_idx);
 		
-        /* 두개의 list가 null 값이 아니라면 값을 보내줌 */
+        /* 두개의 list가 null 값이 아니라면 값을 각각 이름에 맞게 저장 */
 		if (comList != null && setIty != null) {
 			request.setAttribute("comList", comList);
 			request.setAttribute("ity", setIty);
