@@ -31,14 +31,19 @@ public class deleteIty extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		CommunityDAO dao = new CommunityDAO();
-
+	 
+	/* report, ity_idx 값을 받아옴 */
 		String report = request.getParameter("report");
 		String ity_idx = request.getParameter("ity_idx");
 
+	 /*	report null 값이 아니면 실행 */
 		if (report != null) {
+			/* 값을 보내 delete ity 를 실행 */
 			int n = dao.deleteIty(ity_idx);
 
+		/* 삭제에 성공 했을 시 실행 */
 			if (n > 0) {
+		/* 위와 동일 */
 				int n_2 = dao.deleteCom(ity_idx);
 
 				if (n_2 < 0) {
@@ -47,6 +52,7 @@ public class deleteIty extends HttpServlet {
 			} else {
 				out.println("<script> alert(\"신고에 실패하였습니다.\"); </script>");
 			}
+			/* 실행이 끝나면 ity list로 이동 */
 			response.sendRedirect("/ityList");
 		} else {
 			out.println("<script> alert(\"신고 이유를 선택해 주세요.\"); history.go(-1); </script>");
