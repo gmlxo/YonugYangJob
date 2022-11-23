@@ -24,17 +24,20 @@ public class setIndexList extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		EmploymentDAO dao = new EmploymentDAO();
+		/* 값을 담아 온다 */
 		ArrayList<Ent_emp_VO> list = dao.indexEntList();
 		
+		/* index 인지 jobs jsp 인지 확인 용 */
 		String n = request.getParameter("n");
 		
+		/* 값이 있다면 indexList 에 list 값을 넣어준다. */
 		if(list != null) {
 			request.setAttribute("indexList", list);
 		}
 		
-		if(n.equals("1")) 
+		if(n.equals("1"))  /* index jsp  화면으로 넘긴다 */
 			request.getRequestDispatcher("/index.jsp").forward(request, response);
-		else if (n.equals("2")) {
+		else if (n.equals("2")) {  /* jobs jsp  화면으로 넘긴다 */
 			request.getRequestDispatcher("/Information/jobs.jsp").forward(request, response);
 		}
 	}
