@@ -20,6 +20,7 @@ public class SetAnn extends HttpServlet {
         super();
     }
 
+/* ㅊㅐ용 공고 더 자세히 보기 _ 채용 정보와 그 정보에 맞는 기업 정보 가져오기 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		EmploymentDAO dao = new EmploymentDAO();
 
