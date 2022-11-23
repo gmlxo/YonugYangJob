@@ -73,6 +73,7 @@ public class UserDAO {
 		return log;
 	}
 
+// 회원가입
 	public int sign_up(String id, String name, String pwd, String email) {
 		int n = 0;
 		sql = "insert into user_tbl_gmlxo values (?, ?, ?, sysdate, ?, '1')";
