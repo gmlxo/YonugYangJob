@@ -24,7 +24,7 @@
                         <a href="<%= ann.getEmp_url() %>">지원하러 가기 </a>&nbsp;
                     </div>
                 </div>
-            </div>
+            </div><br>
             <div class="contentsAnn">
                 <table>
                     <tr>
@@ -37,7 +37,7 @@
                         <td>
                             <dl>
                                 <dt>학력</dt>
-                                <dd><%= ann.getEmp_education() %></dd>
+                                <dd><%= ann.getEmp_education() %> 이상</dd>
                             </dl>
                         </td>
                         <td>
@@ -87,7 +87,7 @@
                             </dl>
                         </td>
                     </tr>
-                </table>
+                </table><br>
                 <label class="ann_con"> <%= ann.getEmp_contents() %></label>
             </div>
         </div>
