@@ -22,6 +22,7 @@
 	if(indexList != null) {
 		for(Ent_emp_VO vo : indexList){
 %>
+		<!-- 채용 공고 제목을 setAnn servlet에 보내줌 -->
     <div class="index-box" onclick="location.href='/setAnn?title=<%=vo.getEmp_title()%>';">
         <div class="enterprise">
             <!-- 기업 로고 -->
