@@ -23,6 +23,7 @@ public class commnuityList extends HttpServlet {
 		super();
 	}
 
+/* ㄱㅔ시물 전체 불러오기 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		CommunityDAO dao = new CommunityDAO();
