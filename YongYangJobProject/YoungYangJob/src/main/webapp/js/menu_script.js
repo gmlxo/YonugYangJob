@@ -1,3 +1,4 @@
+// footer db 아이콘 눌렀을때 알람
 $("#ser").click(function (e) { 
     alert('수민이 지원');    
 });

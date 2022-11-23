@@ -6,6 +6,7 @@
 
 	<div class="wrapper_">
         <div class="uploadEnt">
+<!-- id 가 null 값이면 로그인으로 null 값이 아니면 기업 정보 올리기 -->
 <% if(id != null) { %>
         	<form action="/addEnt" method="get">
 <% } else { %>

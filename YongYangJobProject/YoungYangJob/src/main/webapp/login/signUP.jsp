@@ -6,6 +6,7 @@
 <div class="wrapper_up">
 	<div class="sign-box">
         <h1>Sign up</h1>
+				<!-- 회원가입 페이지 -->
         <form action="/signUp" method="post">
             <div class="login-box-input">
                 <input type="text" name="id" required>

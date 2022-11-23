@@ -4,6 +4,7 @@
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/dec_style.css">
 <%    
+		<!-- 신고할 게시물의 idx 를 받아온다 -->
     String ity_idx = request.getParameter("ity_idx");
 %>
 	<div class="dec">
@@ -12,10 +13,12 @@
         </div>
         <div class="back-box">
             <a href="javascript:history.back();">
+								<!-- X 이미지 가져오기 -->
                 <img src="/image/x.svg" alt="">
             </a>
         </div>
         <div class="decContexts">
+						<!-- 게시물 신고하기 -->
             <form action="/delIty" method="get">
                 <div class="lpop_cont">
                     <ul class="list_report">
@@ -63,6 +66,7 @@
                         </li>
                     </ul>
                     <div class="textDec">
+											<!-- 게시물 idx 값 보내주기 -->
                     	<input type="hidden" value="<%= ity_idx %>" name="ity_idx">
                         <textarea name="report" placeholder="세부사항을 입력해주세요"></textarea>
                     </div>

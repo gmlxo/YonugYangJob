@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/css/postings_style.css">
 
 	<div class="wrapper">
+<!-- id 값이 null 값이면 로그인으로 null 값이 아니면 채용 공고 올리기 -->
 <% if(id != null) { %>
         <form action="/jobPosting" method="post">
 <% } else { %>

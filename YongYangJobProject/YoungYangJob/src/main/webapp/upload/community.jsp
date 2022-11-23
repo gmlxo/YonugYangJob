@@ -5,6 +5,7 @@
 	
         <div class="uploadCom">
             <h2>게시물 올리기</h2>
+<!-- id 값이 null 값이면 로그인 페이지로, null 값이 아니면 게시물 올리기 -->
 <% if(id != null) { %>
         	<form action="/ity" method="get">
 <% } else { %>

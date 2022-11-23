@@ -1,3 +1,4 @@
+// 누르는 곳 내용 보이기
 $(".tab-id-find").click(function(){
     $(this).css({
         "border-bottom" : "0",
