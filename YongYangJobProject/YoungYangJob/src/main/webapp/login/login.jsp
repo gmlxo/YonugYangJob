@@ -19,7 +19,9 @@
             </div>
             <div class="login-label">
                 <input type="submit" value="Sign in"><br>
+									<!-- 회원가입 페이지로 이동 -->
                 <label><a href="signUP.jsp">Sign Up</a> &nbsp; | 
+								<!-- 아이디 / 비밀번호 찾기 페이지로 이동 -->
                 &nbsp; <a href="find.jsp">Find ID/Password</a></label>
             </div>
         </form>
