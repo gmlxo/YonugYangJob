@@ -25,15 +25,19 @@ public class commentList extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CommunityDAO dao = new CommunityDAO();
 		
+        /* ity_idx 값을 받아옴 */
 		int ity_idx = Integer.parseInt(request.getParameter("ity_idx"));
 		
+        /* 실행한 값을 각각 맞는 list에 저장 */
 		ArrayList<CommentVO> comList = dao.getComList(ity_idx);
 		ArrayList<CommunityVO> setIty = dao.setIty(ity_idx);
 		
+        /* 두개의 list가 null 값이 아니라면 값을 보내줌 */
 		if (comList != null && setIty != null) {
 			request.setAttribute("comList", comList);
 			request.setAttribute("ity", setIty);
 		}
+        /* 실행이 다 되면 set enterprise jsp 로 이동 */
 		request.getRequestDispatcher("/Information/setEnterprise.jsp").forward(request, response);
 	}
 }
