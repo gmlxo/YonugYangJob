@@ -19,6 +19,7 @@ public class signUp extends HttpServlet {
         super();
     }
 
+/* 화원가입 servlet */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		한글 인코딩 설정
@@ -30,7 +31,7 @@ public class signUp extends HttpServlet {
 		UserDAO dao = new UserDAO();
 		String id, name, pwd, email;
 		
-        /* id, name, pwd, email 갖ㅅ을 가져옴 */
+        /* id, name, pwd, email 값을 가져옴 */
 		id = request.getParameter("id");
 		name = request.getParameter("name");
 		pwd = request.getParameter("pwd");
