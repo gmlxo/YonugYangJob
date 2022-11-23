@@ -1,3 +1,5 @@
+<%@page import="vo.Ent_emp_VO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,14 +14,14 @@
 	<div class="uploadAnn">
             <div class="headAnn">
                 <div class="company_name">
-                    company name <%=  %>
+                     <%= ann.getCompany_name() %>
                 </div>
                 <div class="head">
                     <div class="title_ann_upload">
-                        <b>title <%= %> </b>
+                        <b> <%= ann.getEmp_title() %> </b>
                     </div>
                     <div class="support">
-                        <a href="<%= %>">지원하러 가기 <%= %></a>&nbsp;
+                        <a href="<%= ann.getEmp_url() %>">지원하러 가기 </a>&nbsp;
                     </div>
                 </div>
             </div>
@@ -29,25 +31,25 @@
                         <td>
                             <dl>
                                 <dt>경력</dt>
-                                <dd><%= %></dd>
+                                <dd><%= ann.getEmp_career() %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>학력</dt>
-                                <dd><%= %></dd>
+                                <dd><%= ann.getEmp_education() %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>근무 형태</dt>
-                                <dd><%= %></dd>
+                                <dd><%= ann.getEmp_work_type() %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>기간</dt>
-                                <dd>D - <%= %></dd>
+                                <dd>D - <%= ann.getEmp_day() %></dd>
                             </dl>
                         </td>
                     </tr>
@@ -55,19 +57,19 @@
                         <td>
                             <dl>
                                 <dt>분야</dt>
-                                <dd><%= %></dd>
+                                <dd><%= ann.getEnt_sectors() %></dd>
                             </dl>
                         </td>
                         <td>
                             <dl>
                                 <dt>담당자 이름</dt>
-                                <dd>%= %></dd>
+                                <dd><%= ann.getEmp_name() %></dd>
                             </dl>
                         </td>
                         <td colspan="2">
                             <dl class="up">
                                 <dt>담당자 연락처</dt>
-                                <dd><%= %></dd>
+                                <dd><%= ann.getEmp_email() %></dd>
                             </dl>
                         </td>
                     </tr>
@@ -75,18 +77,18 @@
                         <td colspan="2">
                             <dl class="up">
                                 <dt>홈페이지</dt>
-                                <dd><a href="<%= %>"><%= %></a></dd>
+                                <dd><a href="<%= ann.getEnt_url() %>"><%= ann.getEnt_url() %></a></dd>
                             </dl>
                         </td>
                         <td colspan="2">
                             <dl class="up">
                                 <dt>기업 주소</dt>
-                                <dd><%= %></dd>
+                                <dd><%= ann.getEnt_address() %></dd>
                             </dl>
                         </td>
                     </tr>
                 </table>
-                <label class="ann_con"> 내용's</label>
+                <label class="ann_con"> <%= ann.getEmp_contents() %></label>
             </div>
         </div>
 <%

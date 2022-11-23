@@ -97,13 +97,14 @@ SELECT ity_idx, user_id, ity_title, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity
 SELECT TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(ity_day, 'YYYY-MM-DD') FROM community_tbl_gmlxo;
 SELECT com_idx, ity_idx, user_id, TO_DATE(sysdate, 'YYYY-MM-DD') - TO_DATE(com_day, 'YYYY-MM-DD')+1 com_day, com_contents FROM comment_tbl_gmlxo where ity_idx=1;
 select decode(career, '1', 'test', '2', 'aa') from employment_tbl_gmlxo;
+
 select 
     ent.sectors,
     ent.address,
-    ent.url,
+    ent.url ent_url,
     emp.emp_title,
     emp.emp_name,
-    emp.emp_gmail,
+    emp.emp_email,
     emp.company_name,
     TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, 
     emp.emp_url,
@@ -112,4 +113,4 @@ select
     decode(emp.work_type, '1','비정규직', '2', '정규직') work_type,
     emp_contents
 from employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
-where emp.company_name = ent.ent_name;
+where emp.company_name = ent.ent_name and emp.emp_title = 'testTitle';
