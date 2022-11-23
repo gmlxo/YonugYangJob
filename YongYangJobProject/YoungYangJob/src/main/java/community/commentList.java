@@ -21,7 +21,7 @@ public class commentList extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
+/* 게시물과 댓글 자세히 보기 _ idx에 맞는 게시물 세부사항과 댓글 불러오기 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CommunityDAO dao = new CommunityDAO();
 		
