@@ -34,12 +34,15 @@ public class AddComment extends HttpServlet {
 		String id, contents;
 		int ity;
 		
+        /* id, ity, contents 값을 받아옴 */
 		id = request.getParameter("id");
 		ity = Integer.parseInt(request.getParameter("ity"));
 		contents = request.getParameter("contents");
 		
+        /* insertCom 에 값을 보내 실행 */
 		int n = dao.insetCom(ity, id, contents);
 		
+        /* 성공했다면 comList에 ity_idx 값을 보내고 이동 */
 		if(n>0) 
 			response.sendRedirect("/comList?ity_idx="+ity);
 		else
