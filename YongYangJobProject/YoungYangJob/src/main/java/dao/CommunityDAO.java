@@ -165,6 +165,7 @@ public class CommunityDAO {
 		return comList;
 	}
 	
+// 신고 당한 게시물 삭제하기 
 	public int deleteIty(String idx) {
 		int n = 0;
 		sql = "delete from community_tbl_gmlxo where ity_idx = ?";
@@ -183,6 +184,7 @@ public class CommunityDAO {
 		}
 		return n;
 	}
+// 석제된 게시물의 댓글들 삭제하기
 	public int deleteCom(String idx) {
 		int n_2 = 0;
 		sql = "delete from comment_tbl_gmlxo where ity_idx = ?";
