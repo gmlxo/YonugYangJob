@@ -5,10 +5,14 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/upload_style.css">
+<!-- index or job jsp 에서 정보를 더 자세히 보여주는 곳 -->
+<!-- ann list 값을 받아온다 -->
 <% ArrayList<Ent_emp_VO> annList = (ArrayList<Ent_emp_VO>)request.getAttribute("annList"); %>		
 	<div class="wrapper">
 <%
+	/* null 값이 아니면 실행 */
 	if(annList != null){
+		/* ann list 값이 있는 만큼 실행 */
 		for(Ent_emp_VO ann : annList){
 %>
 	<div class="uploadAnn">
