@@ -9,10 +9,14 @@
 
 <div class="box">
 <%
+	/* index list 값을 받아옴 */
 	ArrayList<Ent_emp_VO> indexList = (ArrayList<Ent_emp_VO>) request.getAttribute("indexList");
+	/* null 값이 아니면 실행 */
 	if(indexList != null) {
+		/* index listㅇㅔ 값이 있는 만큼 반복 */
 		for(Ent_emp_VO vo : indexList){
 %>
+	<!-- 채용 공고 제목을 setAnn servlet에 보내줌 -->
     <div class="index-box" onclick="location.href='/setAnn?title=<%=vo.getEmp_title()%>';">
         <div class="enterprise">
             <!-- 기업 로고 -->
