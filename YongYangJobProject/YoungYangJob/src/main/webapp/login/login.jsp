@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/css/login_style.css">
 <div class="wrapper">
 	<div class="login-box">
+				<!-- 로그인 페이지 -->
         <h1>Sign in</h1>
         <form action="/login" method="post">
             <div class="login-box-input">
