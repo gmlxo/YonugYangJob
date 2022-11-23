@@ -14,9 +14,8 @@
             </a>
         </div>
         <div class="decContexts">
-            <form action="#" method="get">
+            <form action="/delIty" method="get">
                 <div class="lpop_cont">
-                    <form action="#" method="get">
                     <ul class="list_report">
                         <li>
                             <span class="inpRdo">
@@ -62,7 +61,7 @@
                         </li>
                     </ul>
                     <div class="textDec">
-                        <textarea placeholder="세부사항을 입력해주세요"></textarea>
+                        <textarea name="report" placeholder="세부사항을 입력해주세요"></textarea>
                     </div>
                     <div class="decBu">
                         <input type="button" value="신고">

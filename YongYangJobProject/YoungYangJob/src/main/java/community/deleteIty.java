@@ -11,12 +11,16 @@ import javax.servlet.http.HttpServletResponse;
 
 import dao.CommunityDAO;
 
-@WebServlet("/ity")
-public class PostIty extends HttpServlet {
+/**
+ * Servlet implementation class delectIty
+ */
+@WebServlet("/delIty")
+public class deleteIty extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public PostIty() {
+    public deleteIty() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,18 +31,25 @@ public class PostIty extends HttpServlet {
 		
 		CommunityDAO dao = new CommunityDAO();
 		
-		String id, title, contents;
+		String report = request.getParameter("report");
+		String ity_idx = request.getParameter("ity_idx");
 		
-		id = request.getParameter("id");
-		title = request.getParameter("title");
-		contents = request.getParameter("contents");
-		
-		int n = dao.insetIty(id, title, contents);
-		
-		if(n>0) 
+		if(report != null) {
+			int n = dao.deleteIty(ity_idx);
+			
+			if(n < 0) {
+				int n_2 = dao.deleteCom(ity_idx);
+				
+				if(n_2<0) {
+					out.println("<script> alert(\"신고에 실패하였습니다.\"); </script>");
+				}
+			} else {
+				out.println("<script> alert(\"신고에 실패하였습니다.\"); </script>");
+			}
 			response.sendRedirect("/ityList");
-		else
-			out.println("<script> alert(\"게시물 업로드에 실패하였습니다.\"); history.go(-1); </script>");
+		} else {
+			out.println("<script> alert(\"신고 이유를 선택해 주세요.\"); history.go(-1); </script>");
+		}
 	}
 
 }

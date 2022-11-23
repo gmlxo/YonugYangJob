@@ -164,4 +164,41 @@ public class CommunityDAO {
 		}
 		return comList;
 	}
+	
+	public int deleteIty(String idx) {
+		int n = 0;
+		sql = "delete form community_tbl_gmlxo where ity_idx = ?";
+		
+		try {
+			conn = JdbcUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, idx);
+			
+			n = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt);
+		}
+		return n;
+	}
+	public int deleteCom(String idx) {
+		int n_2 = 0;
+		sql = "delete form comment_tbl_gmlxo where ity_idx = ?";
+		
+		try {
+			conn = JdbcUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, idx);
+			
+			n_2 = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt);
+		}
+		return n_2;
+	}
 }

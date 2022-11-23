@@ -27,7 +27,7 @@
                     <h2>&nbsp;<%= ity.getIty_title() %></h2>
                 </div>
                 <div class="declaration">
-                    <a href="/popUp/declaration_popUP.jsp">신고</a>&nbsp;&nbsp;
+                    <a href="/popUp/declaration_popUP.jsp?ity_idx=<%= ity.getIty_idx() %>">신고</a>&nbsp;&nbsp;
                 </div>
             </div>
             <div class="pro-box">
