@@ -114,3 +114,5 @@ select
     emp.emp_contents
 from employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent 
 where emp.company_name = ent.ent_name and emp.emp_title = 'testTitle';
+
+delete form community_tbl_gmlxo where ity_idx = ?;

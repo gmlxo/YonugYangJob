@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/dec_style.css">
-
+<%    
+    String ity_idx = request.getParameter("ity_idx");
+%>
 	<div class="dec">
         <div class="h2-box">
             <h2>신고하기</h2>
@@ -61,10 +63,11 @@
                         </li>
                     </ul>
                     <div class="textDec">
+                    	<input type="hidden" value="<%= ity_idx %>" name="ity_idx">
                         <textarea name="report" placeholder="세부사항을 입력해주세요"></textarea>
                     </div>
                     <div class="decBu">
-                        <input type="button" value="신고">
+                        <input type="submit" value="신고">
                     </div>
                 </div>
             </form>

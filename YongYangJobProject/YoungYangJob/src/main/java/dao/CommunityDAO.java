@@ -167,7 +167,7 @@ public class CommunityDAO {
 	
 	public int deleteIty(String idx) {
 		int n = 0;
-		sql = "delete form community_tbl_gmlxo where ity_idx = ?";
+		sql = "delete from community_tbl_gmlxo where ity_idx = ?";
 		
 		try {
 			conn = JdbcUtil.getConnection();
@@ -185,7 +185,7 @@ public class CommunityDAO {
 	}
 	public int deleteCom(String idx) {
 		int n_2 = 0;
-		sql = "delete form comment_tbl_gmlxo where ity_idx = ?";
+		sql = "delete from comment_tbl_gmlxo where ity_idx = ?";
 		
 		try {
 			conn = JdbcUtil.getConnection();
