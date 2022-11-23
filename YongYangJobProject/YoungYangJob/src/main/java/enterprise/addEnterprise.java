@@ -30,6 +30,7 @@ public class addEnterprise extends HttpServlet {
 		
 		String ent_name, representative, establishment_date, sectors, url, address, explanation;
 		
+		/* ent_name, representative, establishment_date, sectors, url, address, explanation 값 받아오기 */
 		ent_name = request.getParameter("ent_name");
 		representative = request.getParameter("representative");
 		establishment_date = request.getParameter("establishment_date");
@@ -38,8 +39,10 @@ public class addEnterprise extends HttpServlet {
 		address = request.getParameter("address");
 		explanation = request.getParameter("explanation");
 
+		/* 값 보내 enterprise table에 넣어주기 */
 		int n = dao.insertEnt(ent_name, representative, establishment_date, sectors, url, address, explanation);
 		
+		/* 성공시 index jsp 로 이동 */
 		if(n>0) {
 			out.println("<script> alert(\"추가되였습니다.\"); </script>");
 			response.sendRedirect("/index.jsp");
