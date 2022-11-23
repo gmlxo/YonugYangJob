@@ -18,6 +18,7 @@ public class SignOut extends HttpServlet {
         super();
     }
 
+/* 로그아웃 servlet */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		
