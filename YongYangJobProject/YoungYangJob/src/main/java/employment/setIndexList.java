@@ -21,6 +21,7 @@ public class setIndexList extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
+/* 채용 정보 전부를 가져온다 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		EmploymentDAO dao = new EmploymentDAO();
