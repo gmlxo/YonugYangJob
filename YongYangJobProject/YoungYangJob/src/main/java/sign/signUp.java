@@ -30,13 +30,16 @@ public class signUp extends HttpServlet {
 		UserDAO dao = new UserDAO();
 		String id, name, pwd, email;
 		
+        /* id, name, pwd, email 갖ㅅ을 가져옴 */
 		id = request.getParameter("id");
 		name = request.getParameter("name");
 		pwd = request.getParameter("pwd");
 		email = request.getParameter("email");
 		
+        /* 값을 user table 에 넣어줌 */
 		int n = dao.sign_up(id, name, pwd, email);
 		
+        /* 성공시 login jsp 로 이동 */
 		if(n>0) 
 			response.sendRedirect("/login/login.jsp");
 		else
