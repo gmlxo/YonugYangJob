@@ -23,6 +23,7 @@ public class SearchJob extends HttpServlet {
 		super();
 	}
 
+/* 검색한 지역에 있는 채용 정보 불러오기 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		EmploymentDAO dao = new EmploymentDAO();
