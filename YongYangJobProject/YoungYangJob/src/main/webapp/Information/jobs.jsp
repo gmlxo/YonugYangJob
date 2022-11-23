@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/index_style.css">
-
+<!-- index jsp : 모든 값 / jobs jsp : 모든 값 or 검색한 지역에 있는 값 -->
 	<div class="wrapper">
         <div class="job-sea">
 						<!-- 검색한 지역에 맞게 정보 가져오게 하기 -->
