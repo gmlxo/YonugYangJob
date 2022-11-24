@@ -51,8 +51,18 @@
         </div>
     </div>
 	<!-- 댓글 달기 -->
-    <div class="entComent">
-        <form action="/com">
+	<div class="entComent">
+<%
+	if(id != null) {
+%>
+    <form action="/com">
+<%
+	} else {
+%>
+        <form action="/login/login.jsp">
+<%
+	}
+%>
 					<!-- user id 값을 보내기용 -->
         	<input type="hidden" name="id" value="<%=id%>">
 					<!-- 게시물 idx 를 보내기용 -->
