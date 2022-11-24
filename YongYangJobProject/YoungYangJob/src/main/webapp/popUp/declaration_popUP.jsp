@@ -4,7 +4,7 @@
 <%@ include file="/header.jsp" %>
 <link rel="stylesheet" href="/css/dec_style.css">
 <%    
-		<!-- 신고할 게시물의 idx 를 받아온다 -->
+	/* 신고할 게시물의 idx 를 받아온다 */
     String ity_idx = request.getParameter("ity_idx");
 %>
 	<div class="dec">

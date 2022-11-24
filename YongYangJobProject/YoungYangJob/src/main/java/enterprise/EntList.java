@@ -36,7 +36,7 @@ public class EntList extends HttpServlet {
 		ArrayList<EnterpriseVO> list = dao.EntDateList(n, keyword);
 
 		/* 값이 있다먄 각각 맞게 저장 */
-		if (list != null count < 0) {
+		if (list != null || count < 0) {
 			request.setAttribute("count", count);
 			request.setAttribute("entList", list);
 		}
