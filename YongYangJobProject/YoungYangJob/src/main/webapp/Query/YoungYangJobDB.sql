@@ -116,3 +116,4 @@ from employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent
 where emp.company_name = ent.ent_name and emp.emp_title = 'testTitle';
 
 delete form community_tbl_gmlxo where ity_idx = ?;
+SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 20) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name and emp_day>sysdate;

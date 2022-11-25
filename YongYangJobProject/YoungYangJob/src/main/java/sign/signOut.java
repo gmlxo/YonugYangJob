@@ -11,26 +11,27 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet("/signOut")
-public class SignOut extends HttpServlet {
+public class signOut extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public SignOut() {
-        super();
-    }
 
-/* 로그아웃 servlet */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public signOut() {
+		super();
+	}
+
+	/* 로그아웃 servlet */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		
+
 		String id, type;
-		
-	/* 세션 값 불러오기 */
+
+		/* 세션 값 불러오기 */
 		id = (String) session.getAttribute("logOK");
 		type = (String) session.getAttribute("type");
-		
+
 		/* 세션 값들 삭제 */
 		session.invalidate();
-		
+
 		/* index jsp 로 이동 */
 		response.sendRedirect("/index.jsp");
 	}

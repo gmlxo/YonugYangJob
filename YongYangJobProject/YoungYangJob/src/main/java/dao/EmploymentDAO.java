@@ -85,7 +85,7 @@ public class EmploymentDAO {
 //	채용 공고들 불러 오기 
 	public ArrayList<Ent_emp_VO> indexEntList() {
 		ArrayList<Ent_emp_VO> indexList = new ArrayList<Ent_emp_VO>();
-		sql = "SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 20) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name";
+		sql = "SELECT emp.company_name, emp.emp_title, TO_DATE(emp.emp_day, 'YYYY-MM-DD') - TO_DATE(sysdate, 'YYYY-MM-DD') emp_day, substr(emp.emp_contents, 1, 20) emp_contents, ent.logo_img, ent.sectors FROM employment_tbl_gmlxo emp, enterprise_tbl_gmlxo ent where emp.company_name = ent.ent_name and emp_day>sysdate";
 
 		try {
 			conn = JdbcUtil.getConnection();

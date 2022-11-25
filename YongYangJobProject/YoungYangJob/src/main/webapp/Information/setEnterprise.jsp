@@ -32,8 +32,17 @@
                     <h2>&nbsp;<%= ity.getIty_title() %></h2>
                 </div>
                 <div class="declaration">
-                    <a href="/popUp/declaration_popUP.jsp?ity_idx=<%= ity.getIty_idx() %>">신고</a>&nbsp;&nbsp;
-                </div>
+<%
+				if(ity.getUser_id().equals(id)) {
+%>
+                    <a href="/userDelete?ity_idx=<%= ity.getIty_idx() %>">게시글 내리기</a>&nbsp;&nbsp;	
+<% 
+				} else {
+%>
+				<a href="/popUp/declaration_popUP.jsp?ity_idx=<%= ity.getIty_idx() %>">신고</a>&nbsp;&nbsp;
+<%
+				}
+%></div>
             </div>
             <div class="pro-box">
                 <div class="profile">
