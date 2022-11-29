@@ -1,4 +1,12 @@
 /* header and footer css */
+.logo{
+	margin-left: 10px;
+}
+#logo-img{
+	width: 150px;
+	height: 80px;	
+}
+
 .mb-md-0{
     margin-left: 50px;
 }

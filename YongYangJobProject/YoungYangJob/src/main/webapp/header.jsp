@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Yang Yang Job</title>
-<link rel="icon" href="logo-img" type="image/x-icon">
+<link rel="icon" href="/image/Logo_img.png" type="image/x-icon">
 <!-- 부트스트립 css 연결 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -28,7 +28,7 @@
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
             <div class="logo">
-                <p>logo</p>
+                <a href="/index?n=1"><img src="/image/Logo_img.png" alt="Logo" id="logo-img"></a>
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
