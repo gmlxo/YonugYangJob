@@ -1,10 +1,11 @@
+<%@page import="vo.CommentVO"%>
 <%@page import="vo.CommunityVO"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="vo.CommentVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@ include file="/header.jsp" %>
+
 <% 
 	/* setIty 값을 받아옴 _ 게시글용 */
 	ArrayList<CommunityVO> setIty = (ArrayList<CommunityVO>)request.getAttribute("ity");
@@ -35,14 +36,11 @@
 <%
 			if(ity.getUser_id().equals(id)) {
 %>
-                <a href="/upload/ity_update.jsp">편집</a>&nbsp;&nbsp;	
-<% 
-			} else {
-%>
-				<a href="/popUp/declaration_popUP.jsp?ity_idx=<%= ity.getIty_idx() %>">신고</a>&nbsp;&nbsp;
+                <a href="/userDelete?ity_idx=<%= ity.getIty_idx() %>">게시글 내리기</a>&nbsp;&nbsp;
 <%
 			}
-%></div>
+%>
+				</div>
             </div>
             <div class="pro-box">
                 <div class="profile">
@@ -55,7 +53,7 @@
             </div>
         </div>
         <div class="entContents">
-            <label>&nbsp;<%= ity.getIty_contents() %></label>
+            <label>&nbsp; <textarea><%= ity.getIty_contents() %></textarea> </label>
             <div class="br"></div>
         </div>
     </div>
@@ -106,4 +104,5 @@
 		}
 	}
 %>
-<%@ include file="/footer.jsp" %>
+
+<%@ include file="/footer.jsp" %> 

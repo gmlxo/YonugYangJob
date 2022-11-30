@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 
 <%@ include file="header.jsp" %>
+<!-- 제목 옆 로고 넣어주기 -->
 <link rel="stylesheet" href="/css/index_style.css">
 
 <div class="box">
