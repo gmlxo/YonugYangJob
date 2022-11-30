@@ -17,8 +17,8 @@
 		/* ity list 값이 있는 만큼 실행 */
 		for(CommunityVO ity : ityList){
 %>
-				<!-- 누르면 ity_idx 를 comList servlet로 보냄 -->
-        <div class="contentsNity" onclick="location.href='/comList?ity_idx=<%=ity.getIty_idx()%>';">
+		<!-- 누르면 ity_idx 를 comList servlet로 보냄 -->
+        <div class="contentsNity" onclick="location.href='/comList?ity_idx=<%=ity.getIty_idx()%>&&itySet=set';">
             <h3><%= ity.getIty_title() %></h3>
             <div class="content"><%= ity.getIty_contents() %></div>
             	<div class="etcCon">

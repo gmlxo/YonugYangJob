@@ -35,7 +35,7 @@
 <%
 			if(ity.getUser_id().equals(id)) {
 %>
-                <a href="/upload/ity_update.jsp">편집</a>&nbsp;&nbsp;	
+                <a href="/comList?ity_idx=<%= ity.getIty_idx() %>&&itySet=update"> 편집 </a>&nbsp;&nbsp;	
 <% 
 			} else {
 %>
