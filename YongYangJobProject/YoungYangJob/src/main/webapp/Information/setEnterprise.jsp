@@ -95,7 +95,9 @@
                 <label class="userName"><%= com.getUser_id() %></label>
             </div>
             <div class="setTitCom">
-                <div class="titCom"><label><%= com.getCom_contents() %></label></div>
+                <div class="titCom">
+                	<label><%= com.getCom_contents() %></label>
+                </div>
                 <div class="dayCom">
                     <label><%= com.getCom_day() %> 일 전</label>
                 </div>
