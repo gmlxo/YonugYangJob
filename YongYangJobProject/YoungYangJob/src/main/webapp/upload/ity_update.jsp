@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="/css/setEnt_style.css">
 
 	<div class="headerEnt">
-				<!-- 게시글 전체 보러 가기 -->
+		<!-- 게시글 전체 보러 가기 -->
         <a href="/ityList">
             < 전체 게시글 </a>
     </div>
@@ -21,24 +21,20 @@
 <%
 	/* null 값이 아니면 실행 */
 	if(setIty != null) {
-	/* list 값이 있는 만큼 반복 */
+		/* list 값이 있는 만큼 반복 */
 		for(CommunityVO ity : setIty){
 %>
     <div class="set">
+    	<form action="/update" method="post">
         <div class="heEnt">
             <div class="tit-box">
                 <div class="tit">
                     <h2>&nbsp;<%= ity.getIty_title() %></h2>
                 </div>
                 <div class="declaration">
-<%
-			if(ity.getUser_id().equals(id)) {
-%>
-				|&nbsp;<a href="/ityUpdate">저장</a>&nbsp;|
-               &nbsp;<a href="/userDelete?ity_idx=<%= ity.getIty_idx() %>">삭제</a>&nbsp;|&nbsp;&nbsp;
-<%
-			}
-%>
+					|&nbsp;<a href="/userDelete?ity_idx=<%= ity.getIty_idx() %>">삭제</a>
+					&nbsp;|<input type="submit" id="updateSubmit" value="변경">|&nbsp;&nbsp;
+    	           
 				</div>
             </div>
             <div class="pro-box">
@@ -55,6 +51,7 @@
             <label>&nbsp; <textarea id="ityUpdateText"><%= ity.getIty_contents() %></textarea> </label>
             <div class="br"></div>
         </div>
+        </form>
     </div>
 <%
 		}

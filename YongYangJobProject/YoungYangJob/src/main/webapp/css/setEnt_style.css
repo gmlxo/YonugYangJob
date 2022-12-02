@@ -129,3 +129,16 @@ input[type=submit] {
 .titCom > label {
 	font-size: 14px;
 }
+#updateSubmit {
+	float: none;
+	border: none;
+	color: #555;
+	background-color: #fff;
+	width: 50px;
+	height: 25px;
+	text-align: center;
+}
+#updateSubmit:hover {
+	color: #000;
+	text-decoration: underline;
+}
