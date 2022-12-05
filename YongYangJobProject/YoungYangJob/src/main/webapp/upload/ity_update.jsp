@@ -25,7 +25,7 @@
 		for(CommunityVO ity : setIty){
 %>
     <div class="set">
-    	<form action="/update" method="post">
+    	<form action="/updateIty" method="post">
         <div class="heEnt">
             <div class="tit-box">
                 <div class="tit">
@@ -48,7 +48,8 @@
             </div>
         </div>
         <div class="entContents">
-            <label>&nbsp; <textarea id="ityUpdateText"><%= ity.getIty_contents() %></textarea> </label>
+            <label>&nbsp; <textarea id="ityUpdateText" name="updateContents"><%= ity.getIty_contents() %></textarea> </label>
+            <input type="hidden" name="ity_idx" value="<%=ity.getIty_idx()%>">
             <div class="br"></div>
         </div>
         </form>

@@ -107,7 +107,7 @@ public class CommunityDAO {
 		}
 		return ityList;
 	}
-	
+
 	/* comment */
 //	댓글 달기
 	public int insetCom(int ity, String id, String contents) {
@@ -133,7 +133,7 @@ public class CommunityDAO {
 
 		return n;
 	}
-	
+
 //	댓글 불러오기
 	public ArrayList<CommentVO> getComList(int ity_idx) {
 		ArrayList<CommentVO> comList = new ArrayList<CommentVO>();
@@ -149,7 +149,7 @@ public class CommunityDAO {
 
 			while (rs.next()) {
 				vo = new CommentVO();
-				
+
 				vo.setUser_id(rs.getString("user_id"));
 				vo.setCom_day(rs.getString("com_day"));
 				vo.setCom_contents(rs.getString("com_contents"));
@@ -164,17 +164,17 @@ public class CommunityDAO {
 		}
 		return comList;
 	}
-	
+
 // 신고 당한 게시물 삭제하기 
 	public int deleteIty(String idx) {
 		int n = 0;
 		sql = "delete from community_tbl_gmlxo where ity_idx = ?";
-		
+
 		try {
 			conn = JdbcUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, idx);
-			
+
 			n = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			// TODO: handle exception
@@ -184,16 +184,17 @@ public class CommunityDAO {
 		}
 		return n;
 	}
+
 // 석제된 게시물의 댓글들 삭제하기
 	public int deleteCom(String idx) {
 		int n_2 = 0;
 		sql = "delete from comment_tbl_gmlxo where ity_idx = ?";
-		
+
 		try {
 			conn = JdbcUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, idx);
-			
+
 			n_2 = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			// TODO: handle exception
@@ -202,5 +203,24 @@ public class CommunityDAO {
 			JdbcUtil.close(conn, pstmt);
 		}
 		return n_2;
+	}
+
+	public int updateItyContents(String ity_idx, String  updateContents) {
+		int n = 0;
+		sql = "update community_tbl_gmlxo set ity_contents = ? where ity_idx = ?";
+
+		try {
+			conn = JdbcUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, updateContents);
+			pstmt.setString(2, ity_idx);
+			n = pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt);
+		}
+		return n;
 	}
 }
